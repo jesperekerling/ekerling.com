@@ -1,9 +1,11 @@
-@import "mobile.css";
+@import "mobile.scss";
+@import "colors.scss";
 
 body {
     background-color: #eee;
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: $text-color;
 }
 a { color: blue; }
 
