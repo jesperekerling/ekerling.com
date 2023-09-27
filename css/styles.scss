@@ -11,7 +11,7 @@ body {
     padding-bottom: 5rem;
 }
 main {
-    max-width: 720px;
+    max-width: 600px;
     padding: 4rem;
     margin: 0 auto;
 }
@@ -19,11 +19,12 @@ a { color: $link-color; }
 a:hover { color: $link-hover-color; }
 h1, h2, h3, h4, h5, h6 {
     color: $secondary-color;
+    font-weight: 600;
 }
 h1 {
     text-align: center;
     font-size: 80px;
-    font-weight: 900;
+    font-weight: 700;
 }
 p {
     font-size: 20px;
