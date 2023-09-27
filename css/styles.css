@@ -2,6 +2,11 @@
   body {
     background-color: lightblue !important;
   }
+  .profile-card ul li {
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 1rem;
+  }
 }
 body {
   background: rgb(255, 255, 255);
@@ -16,7 +21,7 @@ body {
 
 main {
   max-width: 600px;
-  padding: 4rem;
+  padding: 1rem;
   margin: 0 auto;
 }
 
@@ -74,5 +79,22 @@ h2 {
 }
 
 small {
-  color: red;
+  color: #999;
+}
+
+button {
+  padding: 1rem 2rem;
+  background-color: #000;
+  border: 0;
+  border-radius: 0.5rem;
+}
+
+button a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: darkblue;
 }/*# sourceMappingURL=styles.css.map */

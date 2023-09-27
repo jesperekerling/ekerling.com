@@ -13,7 +13,7 @@ body {
 }
 main {
     max-width: 600px;
-    padding: 4rem;
+    padding: 1rem;
     margin: 0 auto;
 }
 a { color: $link-color; }
@@ -55,5 +55,19 @@ h2 {
     box-shadow: 5px 5px 18px -15px;
 }
 small {
-    color: red;
+    color: #999;
+}
+button {
+    padding: 1rem 2rem;
+    background-color: #000;
+    border: 0;
+    border-radius: 0.5rem;
+}
+button a {
+    color: $button-text-color;
+    text-decoration: none;
+    font-weight: 600;
+}
+button:hover {
+    background-color: $button-text-hover-bgcolor;
 }
