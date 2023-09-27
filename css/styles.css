@@ -48,6 +48,10 @@ h2 {
   font-size: 36px;
 }
 
+.profile-card img {
+  width: 150px;
+}
+
 .profile-card ul {
   padding: 0;
 }
@@ -60,4 +64,8 @@ h2 {
   margin: 1rem;
   list-style: none;
   color: #000;
+}
+
+small {
+  color: #999;
 }/*# sourceMappingURL=styles.css.map */
