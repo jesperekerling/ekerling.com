@@ -1,22 +1,46 @@
 @import "mobile";
 @import "colors";
 
+$font-stack: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
 body {
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
     font-size: 18px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: $font-stack;
     color: $primary-color;
     margin: 0 auto;
     padding-bottom: 5rem;
     max-width: 1600px;
+}
+header {
+    width: 100%;
+}
+header span {
+    font-size: 20px;
+    margin: 3rem;
+    position: sticky;
+    top: 20px;
+    font-weight: bold;
 }
 main {
     max-width: 600px;
     padding: 1rem;
     margin: 0 auto;
 }
-a { color: $link-color; }
+footer {
+    text-align: center;
+}
+a {
+    color: $link-color;
+    text-decoration: none;
+    border-bottom: 1px solid #a3a3a3;
+    font-weight: bold;
+}
+a img {
+    border:0;
+}
 a:hover { color: $link-hover-color; }
 h1, h2, h3, h4, h5, h6 {
     color: $secondary-color;
@@ -30,12 +54,7 @@ h1 {
 p {
     font-size: 20px;
 }
-header {
-    width: 100%;
-}
-header span {
-    font-size: 20px;
-}
+
 h2 {
     font-size: 36px;
 }
@@ -53,6 +72,9 @@ h2 {
     list-style: none;
     color: #000;
     box-shadow: 5px 5px 18px -15px;
+}
+.profile-card ul li:hover {
+    box-shadow: 5px 5px 18px -10px;
 }
 small {
     color: #999;

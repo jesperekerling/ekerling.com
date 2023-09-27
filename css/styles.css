@@ -7,6 +7,9 @@
     padding: 2rem;
     margin: 1rem;
   }
+  header span {
+    display: none;
+  }
 }
 body {
   background: rgb(255, 255, 255);
@@ -19,14 +22,37 @@ body {
   max-width: 1600px;
 }
 
+header {
+  width: 100%;
+}
+
+header span {
+  font-size: 20px;
+  margin: 3rem;
+  position: sticky;
+  top: 20px;
+  font-weight: bold;
+}
+
 main {
   max-width: 600px;
   padding: 1rem;
   margin: 0 auto;
 }
 
+footer {
+  text-align: center;
+}
+
 a {
-  color: rgb(255, 94, 0);
+  color: rgb(32, 138, 64);
+  text-decoration: none;
+  border-bottom: 1px solid #a3a3a3;
+  font-weight: bold;
+}
+
+a img {
+  border: 0;
 }
 
 a:hover {
@@ -45,14 +71,6 @@ h1 {
 }
 
 p {
-  font-size: 20px;
-}
-
-header {
-  width: 100%;
-}
-
-header span {
   font-size: 20px;
 }
 
@@ -76,6 +94,10 @@ h2 {
   list-style: none;
   color: #000;
   box-shadow: 5px 5px 18px -15px;
+}
+
+.profile-card ul li:hover {
+  box-shadow: 5px 5px 18px -10px;
 }
 
 small {
