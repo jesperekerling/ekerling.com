@@ -35,11 +35,7 @@ footer {
 a {
     color: $link-color;
     text-decoration: none;
-    border-bottom: 1px solid #a3a3a3;
     font-weight: bold;
-}
-a img {
-    border:0;
 }
 a:hover { color: $link-hover-color; }
 h1, h2, h3, h4, h5, h6 {

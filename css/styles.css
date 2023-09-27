@@ -47,12 +47,7 @@ footer {
 a {
   color: rgb(32, 138, 64);
   text-decoration: none;
-  border-bottom: 1px solid #a3a3a3;
   font-weight: bold;
-}
-
-a img {
-  border: 0;
 }
 
 a:hover {
