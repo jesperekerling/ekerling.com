@@ -1,3 +1,5 @@
+@import "mobile.css";
+
 body {
     background-color: #eee;
     font-size: 18px;
@@ -6,4 +8,6 @@ body {
 a { color: blue; }
 
 
-@import "mobile.css";
+.profilcard ul li {
+    background-color: #fff;
+}
