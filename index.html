@@ -6,34 +6,82 @@
     <title>Ekerling.com</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-    <h1>Ekerling.com</h1>
-    <p>
-        Dear user,<br>
-        This page will be about Jesper Ekerling and his digital journies
-    </p>
-    
-    <div class="profile-card">
-        <ul>
-            <li>
-                Jesper Ekerling
-                <span>Front End Developer - 37, Stockholm, Sweden</span>
-                <span>Currently studying: Front End Developer at <a href="https://kyh.se/">KYH.se</a></7a></span>
-            </li>
-            <li>
-                LinkedIn: <a href="https://www.linkedin.com/in/jesper-ekerling-5771b26b/" title="Profile page for Jesper Ekerling">Jesper Ekerling</a>
-            </li>
-            <li>
-                Github: <a href="https://github.com/jesperekerling" title="Profile for Jesper Ekerling at github.com">jesperekerling</a>
-            </li>
-        </ul>
-    </div>
-    <h2>The story</h2>
-    <p>I have been building websites since a was a 11 year old boy. Since I ended High School I have been working with my websites full-time. A couple of years ago (2020) I took a job at the ecommerce <a href="https://strongerlabel.com/">Stronger</a> and worked there almost 2 years. The last year I have been working again with my own projects, lived in the northern part of Sweden and started to study to <strong>Front End Developer</strong>.</p>
-    <p>My goal is to mainly learn more JavaScript and after studies work as a Front End Developer in Stockholm.</p>
-    
-    <h2>Projects</h2>
-    <h3>MY:NELLY</h3>
-    <p>Some projects here</p>
+    <header id="header">
+        <span>ekerling.com</span>
+        <h1>Jesper Ekerling</h1>
+    </header>
+    <main>
+        <p>
+            Dear user,<br>
+            This page will be about Jesper Ekerling and his digital journies
+        </p>
+        
+        <div class="profile-card">
+            <ul>
+                <li>
+                    Jesper Ekerling<br>
+                    <span>Front End Developer - 37, Stockholm, Sweden</span><br>
+                    <span>Currently studying: Front End Developer at <a href="https://kyh.se/">KYH</a></span>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/jesper-ekerling-5771b26b/"><img src="./img/svg/linkedin.png" alt="LinkedIn logo"></a><br>
+                    LinkedIn: <a href="https://www.linkedin.com/in/jesper-ekerling-5771b26b/" title="Profile page for Jesper Ekerling">Jesper Ekerling</a><br>
+                    <small>Check out my LinkedIn page</small>
+                </li>
+                <li>
+                    ICON
+                    Github: <a href="https://github.com/jesperekerling" title="Profile for Jesper Ekerling at github.com">jesperekerling</a><br>
+                    <small>Check out my Github page</small>
+                </li>
+                <li>
+                    Stylewish AB<br>
+                    <small>My company website</small>
+                </li>
+                <li>
+                    Email me<br>
+                    jesper.ekerling@gmail.com
+                </li>
+            </ul>
+        </div>
+        <h2>My story</h2>
+        <p>I have been building websites since a was a 11 year old boy. Since I ended High School I have been working with my websites full-time. A couple of years ago (2020) I took a job at the ecommerce <a href="https://strongerlabel.com/">Stronger</a> and worked there almost 2 years. The last year I have been working again with my own projects, lived in the northern part of Sweden and started to study to <strong>Front End Developer</strong>.</p>
+        <p>My goal is to mainly learn more JavaScript and after studies work as a Front End Developer in Stockholm.</p>
+        
+        <h2>My ambition</h2>
+
+        <h2>Projects</h2>
+        <h3>Stylewish Influencer Blog Network</h3>
+        <p>Creating websites, designing blogs, ad management, ad sales, Wordpress maintence</p>
+        <button><a href="page2.html">More about Influencer blogs</a></button>
+        <p>Status: ongoing</p>
+        <h3>MY:NELLY</h3>
+        <p>About Mynelly</p>
+        <h3>be:NA-KD</h3>
+        <p>About benakd</p>
+        <p>Active years: 2015-2019, the <a href="https://www.instagram.com/explore/tags/benakd/">#benakd</a> is still used though (150k+ posts)</p>
+        <h3>for.me blog portal</h3>
+        <p>Creation of a CMS system for blogging. Around 30-40 000 swedish blogs. Active around 2011-2017. Highest traffic around 1 000 000 users  monthly.</p>
+        <h3>Jesper.nu</h3>
+        <p>My first website. Developed in PHP/HTML/CSS. Highest traffic around 1 000 000 users monthly. Today it is around 10 000 =)</p>
+    </main>
+    <footer>
+        <p>
+            &copy; 2023 Jesper Ekerling, ekerling.com
+        </p>
+    </footer>
+    <script>
+        // When the user scrolls down 50px from the top of the document, resize the header's font size
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("header").style.fontSize = "30px";
+          } else {
+            document.getElementById("header").style.fontSize = "90px";
+          }
+        }
+        </script>
 </body>
 </html>
