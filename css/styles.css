@@ -48,13 +48,13 @@ footer {
 }
 
 a {
-  color: rgb(32, 138, 64);
+  color: #165F2C;
   text-decoration: none;
   font-weight: 600;
 }
 
 a:hover {
-  color: red;
+  color: darkgreen;
 }
 
 h1, h2, h3, h4, h5, h6 {
