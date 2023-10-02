@@ -115,7 +115,7 @@ h3 {
 }
 
 .item1 {
-  background-image: url("/img/jesper-ekerling-profile-picture.jpeg");
+  background-image: url("./../img/jesper-ekerling-profile-picture.jpeg");
   background-size: cover;
 }
 

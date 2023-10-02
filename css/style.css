@@ -117,6 +117,7 @@ h3 {
 .item1 {
   background-image: url("./../img/jesper-ekerling-profile-picture.jpeg");
   background-size: cover;
+  font-size:1px;
 }
 
 .item1:hover {
