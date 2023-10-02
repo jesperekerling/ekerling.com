@@ -1,6 +1,9 @@
 @import "mobile";
 @import "colors";
 
+* {
+    box-sizing: border-box;
+}
 $font-stack: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 
@@ -17,7 +20,7 @@ body {
 header {
     width: 100%;
 }
-header span {
+header .logo {
     font-size: 20px;
     margin: 3rem;
     position: sticky;
@@ -25,7 +28,6 @@ header span {
     font-weight: bold;
 }
 main {
-    max-width: 600px;
     padding: 1rem;
     margin: 0 auto;
 }
@@ -47,37 +49,64 @@ h1 {
     font-size: 50px;
     font-weight: 700;
 }
+h1 span {
+    color: #eaeaea;
+}
 p {
-    font-size: 20px;
+    font-size: 24px;
+    line-height: 36px;
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 40px;
 }
-.profile-card {
+h3 {
+    font-size: 30px;
+}
+.profile-section {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+.profile-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    padding: 3rem 0;
 }
-.profile-card img {
+.profile-grid div img {
     width: 150px;
 }
-.profile-card ul { 
-    padding: 0;
-}
-.profile-card ul li {
-    grid-column: 2 / 2;
+.profile-grid div {
     border-radius: 2rem;
     background-color: #fff;
-    padding: 2.5rem;
-    margin: 1rem;
+    padding: 2.25rem;
     list-style: none;
     color: #000;
     box-shadow: 5px 5px 18px -15px;
-    width: 70%;
 }
-.profile-card ul li:hover {
+.profile-grid div:hover {
     box-shadow: 5px 5px 18px -10px;
+}
+.item1 {
+    background-image: url('/img/jesper-ekerling-profile-picture.jpeg');
+    background-size: cover;
+}
+.item1:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.item2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    line-height: 2;
+}
+
+.about-me, .ambitions, .projects {
+    max-width: 600px;
+    margin: 0 auto;
+}
+strong {
+    font-weight: 600;
 }
 small {
     color: #999;
