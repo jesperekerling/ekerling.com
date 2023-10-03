@@ -1,3 +1,5 @@
+// Source: https://codepen.io/lakshmanan-arumugam/pen/zYZvewO
+
 function setThemePreference() {
     var d = new Date();
     /*
@@ -17,3 +19,7 @@ function setThemePreference() {
   }
   
   window.onload = setThemePreference;
+
+function themeState() {
+    document.getElementById("myText").innerHTML = console.log(data-theme);
+}

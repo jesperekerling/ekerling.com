@@ -10,12 +10,18 @@ $button-text-color: #fff;
 $button-text-hover-bgcolor: darkblue;
 
 
+// Dark theme colors
+
+$bg-color-dark: #000;
+// $bg-gradient-dark: linear-gradient(0deg, rgb(64, 64, 65) 0%, rgb(20, 20, 20) 100%);
+
+
+
 body[data-theme='dark_theme'] {
-    --white: #fff;
-    --bg-color: #000;
-    --bg-gradient: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(48, 48, 48) 100%);
-    --color: #fff;
-    --secondary-color: #ff7f57;
-    --icon-bg-color: #333;   
-    --icon-color: #fff;
-  }
+    background: $bg-color-dark;
+    
+    color: #b8b8b8;
+    h1, h2, h3, h4, h5, h6  {
+        color: rgb(161, 161, 161);
+    }
+}

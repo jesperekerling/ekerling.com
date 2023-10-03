@@ -12,13 +12,11 @@
   }
 }
 body[data-theme=dark_theme] {
-  --white: #fff;
-  --bg-color: #000;
-  --bg-gradient: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(48, 48, 48) 100%);
-  --color: #fff;
-  --secondary-color: #ff7f57;
-  --icon-bg-color: #333;
-  --icon-color: #fff;
+  background: #000;
+  color: #b8b8b8;
+}
+body[data-theme=dark_theme] h1, body[data-theme=dark_theme] h2, body[data-theme=dark_theme] h3, body[data-theme=dark_theme] h4, body[data-theme=dark_theme] h5, body[data-theme=dark_theme] h6 {
+  color: rgb(161, 161, 161);
 }
 
 * {
