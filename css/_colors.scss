@@ -8,20 +8,28 @@ $link-color: #165F2C;
 $link-hover-color: rgb(95, 182, 95);
 $button-text-color: #fff;
 $button-text-hover-bgcolor: darkblue;
+$h1-color: #111;
 
 
 // Dark theme colors
-
-$bg-color-dark: #000;
+$bg-color-dark: #484848;
+$primary-color-dark: #b8b8b8;
+$link-color-dark: #fff;
+$h1-color: #fff;
 // $bg-gradient-dark: linear-gradient(0deg, rgb(64, 64, 65) 0%, rgb(20, 20, 20) 100%);
 
 
 
 body[data-theme='dark_theme'] {
-    background: $bg-color-dark;
-    
-    color: #b8b8b8;
-    h1, h2, h3, h4, h5, h6  {
+    background: $bg-color-dark;    
+    color: $primary-color-dark;
+    h1 {
+      color: $h1-color;
+    }
+    h2, h3, h4, h5, h6  {
         color: rgb(161, 161, 161);
+    }
+    a {
+      color: $link-color-dark;
     }
 }
