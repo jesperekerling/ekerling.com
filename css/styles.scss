@@ -7,9 +7,10 @@
 $font-stack: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 
+  
 body {
     background: $bg-color;
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+    background: $bg-gradient;
     font-size: 18px;
     font-family: $font-stack;
     color: $primary-color;
