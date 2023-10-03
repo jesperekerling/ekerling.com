@@ -38,7 +38,7 @@ a {
     font-weight: 600;
 }
 a:hover { color: $link-hover-color; }
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
     color: $secondary-color;
     font-weight: 600;
 }
@@ -47,9 +47,6 @@ h1 {
     font-size: 70px;
     font-weight: 500;
     color: $h1-color;
-}
-h1 span {
-    color: #eaeaea;
 }
 p {
     font-size: 24px;
@@ -69,11 +66,19 @@ h3 {
 .profile-grid {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 2rem;
-    padding: 6rem 0;
+    gap: 3rem;
+    padding: 6rem;
+    background-color: #e3f6ff;
+    border-top: 47px solid #2f2f68;
+    border-bottom: 40px solid #606060;
+    border-radius: 50%;
+    line-height: 1.5;
 }
 .profile-grid div img {
     width: 150px;
+}
+.profile-grid a {
+    color: $profile-card-link;
 }
 .profile-grid div {
     border-radius: 2rem;
@@ -98,6 +103,9 @@ h3 {
     grid-column-start: 2;
     grid-column-end: 4;
     line-height: 2;
+    h2 {
+        font-size: 200%;
+    }
 }
 
 .about-me, .ambitions, .projects {
@@ -112,11 +120,11 @@ small {
 }
 button {
     padding: 1rem 2rem;
-    background-color: #000;
+    background-color: $button-color;
     border: 0;
     border-radius: 0.5rem;
 }
-button a {
+button a, a button {
     color: $button-text-color;
     text-decoration: none;
     font-weight: 600;
@@ -124,4 +132,5 @@ button a {
 button:hover, button a:hover {
     background-color: $button-text-hover-bgcolor;
     color: $button-text-color;
+    cursor: pointer;
 }

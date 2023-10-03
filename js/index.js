@@ -1,5 +1,7 @@
 // Source: https://codepen.io/lakshmanan-arumugam/pen/zYZvewO
 
+// https://codepen.io/haxzie/pen/xxKNEGM
+
 function setThemePreference() {
     var d = new Date();
     /*
@@ -11,7 +13,7 @@ function setThemePreference() {
     */
     var currentHour = d.getHours();  
   
-    if(currentHour >= 10 || currentHour <= 11) {
+    if(currentHour >= 20 || currentHour <= 0  ) {
       document.body.setAttribute("data-theme", "dark_theme") 
     }else {
       document.body.setAttribute("data-theme", "light_theme") 
@@ -19,7 +21,3 @@ function setThemePreference() {
   }
   
   window.onload = setThemePreference;
-
-function themeState() {
-    document.getElementById("myText").innerHTML = console.log(data-theme);
-}
