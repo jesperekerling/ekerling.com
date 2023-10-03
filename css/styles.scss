@@ -1,10 +1,10 @@
 @import "mobile";
 @import "colors";
-
+@import "fonts";
 * {
     box-sizing: border-box;
 }
-$font-stack: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$font-stack: Graphik, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   
 body {
     background: $bg-color;
