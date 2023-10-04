@@ -217,6 +217,11 @@ button:hover, button a:hover {
   width: 100%;
 }
 
+.switch-button {
+  text-align: center;
+  margin: 0 auto;
+}
+
 .theme-light {
   --color-primary: #0060df;
   --color-secondary: #fbfbfe;
