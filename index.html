@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html class="light_theme">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     <script src="./js/index.js"></script>
 </head>
 
-<body data-theme="dark_theme">
+<body>
     <header>
         <span class="logo">ekerling.com</span>
         <h1>Jesper Ekerling</h1>
@@ -18,12 +18,21 @@
     <main>
         <section class="profile-section">
             <p>
+                <div class="">
+                    <label id="switch" class="switch">
+                        <input type="checkbox" onchange="toggleTheme()" id="slider">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </p>
+            <p>
                 Hey,<br>
                 This page will be about my digital journeys.<br>
                 <p>Contents: <a href="#my-story">My Story</a>, <a href="#projects">Projects</a>, <a href="#ambitions">Ambitions</a>.</p>
 
             </p>
             <p>Theme: <span data-theme="dark_theme">Light theme</span></p>
+
         </section>
         <div class="profile-grid">
             <div class="item1">

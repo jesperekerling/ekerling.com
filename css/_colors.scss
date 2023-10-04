@@ -23,7 +23,7 @@ $profile-card-link-dark: darkblue;
 
 
 
-body[data-theme='dark_theme'] {
+html[class='dark_theme'] {
     background: $bg-color-dark;    
     color: $primary-color-dark;
     h1 {
