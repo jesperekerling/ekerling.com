@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ekerling.com</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <meta name="description" content="Ekerling">
-    <meta name="keyworda" content="Ekerling">
+    <meta name="description" content="Portfolio website about Jesper EKerling. Front end developer and IT Project Manager.">
+    <meta name="keyworda" content="Ekerling, Jesper, portfolio, front end, it project manager">
     <script src="./js/index.js"></script>
 </head>
 
@@ -16,20 +16,18 @@
         <h1>Jesper Ekerling</h1>
     </header>
     <main>
+        <div class="theme-switcher">
+            <label id="switch" class="switch">
+                <input type="checkbox" onchange="toggleTheme()" id="slider">
+                <span class="slider round"></span>
+            </label><br>
+            <p><small>Daytime = light, night time = dark</small></p>
+        </div>
         <section class="profile-section">
             <p>
-                Hey,<br>
-                This page will be about my digital journeys.<br>
-                <p>Contents: <a href="#my-story">My Story</a>, <a href="#projects">Projects</a>, <a href="#ambitions">Ambitions</a>.</p>
-
-            </p>
-            <p>Theme:                 
-                <div class="">
-                    <label id="switch" class="switch">
-                        <input type="checkbox" onchange="toggleTheme()" id="slider">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
+                Hey,</p>
+                <p>This page will be about my digital journeys.</p><br><br>
+                <p><a href="#my-story">My Story</a></p><p><a href="#projects">Projects</a></p><p><a href="#ambitions">Ambitions</a></p>
             </p>
 
         </section>
@@ -78,7 +76,8 @@
             <h2>
                 My ambition
             </h2>
-            <p>I have big ambitions.</p>
+            <p>Improve, improve, improve.</p>
+            <p>Many digital products needs maintence and development.</p>
         </section>
         <section class="projects" id="projects">
         <h2>
