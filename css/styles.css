@@ -209,6 +209,10 @@ button:hover, button a:hover {
   cursor: pointer;
 }
 
+.projects article img {
+  width: 100%;
+}
+
 .theme-light {
   --color-primary: #0060df;
   --color-secondary: #fbfbfe;
