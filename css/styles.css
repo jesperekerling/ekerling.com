@@ -209,6 +209,10 @@ button:hover, button a:hover {
   cursor: pointer;
 }
 
+.projects h3 {
+  margin-top: 4rem;
+}
+
 .projects article img {
   width: 100%;
 }

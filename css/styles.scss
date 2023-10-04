@@ -134,7 +134,9 @@ button:hover, button a:hover {
     color: $button-text-color;
     cursor: pointer;
 }
-
+.projects h3 {
+    margin-top: 4rem;
+}
 .projects article img {
     width: 100%;
 }
