@@ -1,3 +1,5 @@
+const sliderChecked = document.getElementById('slider');
+
 
 // Start of theme by time of day
 // Source: https://codepen.io/lakshmanan-arumugam/pen/zYZvewO
@@ -13,10 +15,12 @@ function setThemePreference() {
   */
   var currentHour = d.getHours();  
 
-  if(currentHour >= 20 || currentHour <= 7  ) {
-    document.documentElement.setAttribute("class", "dark_theme") 
+  if(currentHour >= 20 || currentHour <= 8  ) {
+    document.documentElement.setAttribute("class", "dark_theme")
+    slider.checked = false;
   }else {
     document.documentElement.setAttribute("class", "light_theme") 
+    slider.checked = true;
   }
 }
   
@@ -40,19 +44,11 @@ function setTheme(themeName) {
 function toggleTheme() {
     if (localStorage.getItem('theme') === 'dark_theme') {
         setTheme('light_theme');
+        slider.checked = true;
+        
     } else {
         setTheme('dark_theme');
+        slider.checked = false;
     }
 }
-
-// Immediately invoked function to set the theme on initial load
-(function () {
-    if (localStorage.getItem('theme') === 'light_theme') {
-        setTheme('light_theme');
-        document.getElementById('slider').checked = false;
-    } else {
-        setTheme('dark_theme');
-      document.getElementById('slider').checked = true;
-    }
-})();
 
