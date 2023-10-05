@@ -1,4 +1,4 @@
-<!DOCTYPE html class="light_theme">
+<!DOCTYPE html class="">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,14 @@
     <meta name="description" content="Portfolio website about Jesper EKerling. Front end developer and IT Project Manager.">
     <meta name="keyworda" content="Ekerling, Jesper, portfolio, front end, it project manager">
     <script src="./js/index.js"></script>
+
+    <meta property="og:title" content="Portfolio page for Jesper Ekerling">
+    <meta property="og:description" content="Portfolio page for Jesper Ekerling with examples of previous projects.">
+    <meta property="og:image" content="https://example.com/royal-school-image.jpg">
+    <meta property="og:url" content="https://example.com">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -16,18 +24,20 @@
         <h1>Jesper Ekerling</h1>
     </header>
     <main>
-        <div class="theme-switcher">
-            <label id="switch" class="switch">
-                <input type="checkbox" onchange="toggleTheme()" id="slider">
-                <span class="slider round"></span>
-            </label><br>
-            <p><small>Daytime = light, night time = dark</small></p>
-        </div>
         <section class="profile-section">
             <p>
-                Hey,</p>
-                <p>This page will be about my digital journeys.</p><br><br>
-                <p><a href="#my-story">My Story</a></p><p><a href="#projects">Projects</a></p><p><a href="#ambitions">Ambitions</a></p>
+                Hey,<br>
+                This page will be about my digital journeys.<br>
+                <p>Contents: <a href="#my-story">My Story</a>, <a href="#projects">Projects</a>, <a href="#ambitions">Ambitions</a>.</p>
+
+            </p>
+            <p>Theme:                 
+                <div class="">
+                    <label id="switch" class="switch">
+                        <input type="checkbox" onchange="toggleTheme()" id="slider">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
             </p>
 
         </section>
@@ -88,8 +98,20 @@
             <button><a href="page2.html">More about Influencer blogs</a></button>
             <p>Status: ongoing</p>
 
-            <h3>MY:NELLY</h3>
-            <p>About Mynelly</p>
+            <article>
+                <h3>MY:NELLY</h3>
+                <p>Nelly in 2014 needed an blogger/influencer CMS to make content creation and measurement easier for influencers.</p>
+                <h4>Tech</h4>
+                <p>Tech: Creation of a affiliate network, connecting/using REST API for products and orders, creation of payments</p>
+                <h4>Design</h4>
+                <p>I created all UX, CSS/HTML and UI.</p>
+                <h4>Role</h4>
+                <p>My role was Project Manager and Front End Developer.</p>
+                <a href="./projects/mynelly/MY-NELLY.pdf"><button>Watch Project PDF</button></a></p>
+                <img src="./projects/mynelly/Showroom 1.png" alt="Showroom example 1" title="Showroom example 1">
+                <img src="./projects/mynelly/Showroom 2.png" alt="Showroom example 2" title="Showroom example 2">
+                <img src="./projects/mynelly/Showroom 2.png" alt="Showroom example 3" title="Showroom example 3">
+            </article>
 
             <h3>be:NA-KD</h3>
             <p>About benakd</p>
