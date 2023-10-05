@@ -5,7 +5,7 @@ $bg-gradient: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 
 $primary-color: #444;
 $secondary-color: #202020;
 $link-color: #0017a2;
-$link-hover-color: rgb(95, 182, 95);
+$link-hover-color: #2a48ff;
 $button-color: #0017a2;
 $button-text-color: #fff;
 $button-text-hover-bgcolor: #000;
@@ -19,6 +19,7 @@ $bg-color-dark: #484848;
 $primary-color-dark: #b8b8b8;
 $link-color-dark: #e1ff00;
 $h1-color-dark: #fff;
+$headline-color-dark: #eeffbb;
 $profile-card-link-dark: darkblue;
 // $bg-gradient-dark: linear-gradient(0deg, rgb(64, 64, 65) 0%, rgb(20, 20, 20) 100%);
 
@@ -31,7 +32,7 @@ html[class='dark_theme'] {
       color: $h1-color-dark;
     }
     h2, h3, h4, h5, h6  {
-        color: #eeffbb;
+        color: $headline-color-dark;
     }
     a {
       color: $link-color-dark;

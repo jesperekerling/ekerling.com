@@ -95,7 +95,7 @@ a {
 }
 
 a:hover {
-  color: rgb(95, 182, 95);
+  color: #2a48ff;
 }
 
 h2, h3, h4, h5, h6 {
@@ -117,6 +117,7 @@ article p {
 
 h2 {
   font-size: 40px;
+  margin-top: 10rem;
 }
 
 h3 {
@@ -131,6 +132,7 @@ h3 {
 .profile-section {
   max-width: 800px;
   margin: 5rem auto 15rem;
+  font-size: 1.1rem;
 }
 
 .profile-grid {
@@ -190,7 +192,9 @@ h3 {
   line-height: 2;
 }
 .item2 h2 {
-  font-size: 200%;
+  font-size: 2rem;
+  margin-top: 2rem;
+  font-weight: bold;
 }
 
 .about-me, .ambitions, .projects {
