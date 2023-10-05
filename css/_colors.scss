@@ -11,6 +11,7 @@ $button-text-color: #fff;
 $button-text-hover-bgcolor: #000;
 $h1-color: #111;
 $profile-card-link: #0017a2;
+$profile-grid-color: #333;
 
 
 // Dark theme colors
@@ -37,5 +38,8 @@ html[class='dark_theme'] {
     }
     .profile-grid a {
       color: $profile-card-link-dark;
+    }
+    .profile-grid h2, .profile-grid h3 {
+      color: $profile-grid-color;
     }
 }

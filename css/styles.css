@@ -27,6 +27,9 @@ html[class=dark_theme] a {
 html[class=dark_theme] .profile-grid a {
   color: darkblue;
 }
+html[class=dark_theme] .profile-grid h2, html[class=dark_theme] .profile-grid h3 {
+  color: #333;
+}
 
 @font-face {
   font-family: "Graphik";
@@ -151,15 +154,20 @@ h3 {
   color: #0017a2;
 }
 
+.profile-grid h2, .profile-grid h3 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
 .profile-grid div {
   border-radius: 2rem;
   background-color: #fff;
   padding: 2.25rem;
   list-style: none;
-  color: #000;
+  color: #333;
   box-shadow: 5px 5px 18px -15px;
   line-height: 1.5;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .profile-grid div:hover {

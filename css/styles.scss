@@ -85,15 +85,19 @@ h3 {
 .profile-grid a {
     color: $profile-card-link;
 }
+.profile-grid h2, .profile-grid h3 {
+    color: $profile-grid-color;
+    margin-bottom: 1.5rem;
+}
 .profile-grid div {
     border-radius: 2rem;
     background-color: #fff;
     padding: 2.25rem;
     list-style: none;
-    color: #000;
+    color: $profile-grid-color;
     box-shadow: 5px 5px 18px -15px;
     line-height: 1.5;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 .profile-grid div:hover {
     box-shadow: 5px 5px 18px -10px;
