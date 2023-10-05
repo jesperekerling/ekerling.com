@@ -19,7 +19,7 @@ html[class=dark_theme] h1 {
   color: #fff;
 }
 html[class=dark_theme] h2, html[class=dark_theme] h3, html[class=dark_theme] h4, html[class=dark_theme] h5, html[class=dark_theme] h6 {
-  color: rgb(161, 161, 161);
+  color: #eeffbb;
 }
 html[class=dark_theme] a {
   color: #e1ff00;
