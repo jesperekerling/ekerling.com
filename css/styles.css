@@ -113,6 +113,18 @@ h1 {
 article p {
   font-size: 24px;
   line-height: 36px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+article h2, article h3, article h4, article h5, article h6 {
+  width: 600px;
+  margin: 0 auto;
+}
+
+article button {
+  margin: 0 auto;
+  max-width: 600px;
 }
 
 h2 {
@@ -122,6 +134,18 @@ h2 {
 
 h3 {
   font-size: 30px;
+}
+
+.sticky {
+  display: block;
+  position: sticky;
+  top: 9rem;
+  font-size: 271.7%;
+  width: unset;
+}
+
+section {
+  margin: 10rem 0;
 }
 
 .theme-switcher {
@@ -197,11 +221,6 @@ h3 {
   font-weight: bold;
 }
 
-.about-me, .ambitions, .projects {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
 strong {
   font-weight: 600;
 }
@@ -234,8 +253,13 @@ button:hover, button a:hover {
   margin-top: 4rem;
 }
 
-.projects article img {
-  width: 100%;
+.project-gallery {
+  margin-left: 300px;
+}
+
+.project-gallery img {
+  width: 400px;
+  display: inline-block;
 }
 
 .switch-button {
