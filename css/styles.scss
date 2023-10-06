@@ -1,4 +1,4 @@
-@import "mobile";
+
 @import "colors";
 @import "fonts";
 * {
@@ -83,12 +83,12 @@ section {
     margin: 0 auto;
     text-align: center;
 }
-.profile-section {
+#profile-section {
     max-width: 800px;
     margin: 5rem auto 15rem;
     font-size: 1.1rem;
 }
-.profile-grid {
+#profile-grid {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 2.3rem;
@@ -99,18 +99,18 @@ section {
     border-radius: 50%;
     line-height: 1.5;
 }
-.profile-grid div img {
+#profile-grid div img {
     width: 150px;
     padding-bottom: 1rem;
 }
-.profile-grid a {
+#profile-grid a {
     color: $profile-card-link;
 }
-.profile-grid h2, .profile-grid h3 {
+#profile-grid h2, .profile-grid h3 {
     color: $profile-grid-color;
     margin-bottom: 1.5rem;
 }
-.profile-grid div {
+#profile-grid div {
     border-radius: 2rem;
     background-color: #fff;
     padding: 2.25rem;
@@ -120,7 +120,7 @@ section {
     line-height: 1.5;
     font-size: 1rem;
 }
-.profile-grid div:hover {
+#profile-grid div:hover {
     box-shadow: 5px 5px 18px -10px;
 }
 .item1 {
@@ -164,7 +164,7 @@ button:hover, button a:hover {
     color: $button-text-color;
     cursor: pointer;
 }
-.projects h3 {
+#projects h3 {
     margin-top: 4rem;
 }
 .project-gallery {
@@ -253,4 +253,4 @@ button:hover, button a:hover {
   .slider.round:before {
     border-radius: 50%;
   }
-  
+  @import "mobile";

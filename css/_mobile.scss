@@ -1,12 +1,42 @@
 @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue !important;
+    #profile-section {
+      
     }
-    .profile-card ul li {
-      border-radius: 1rem;
-      padding: 2rem;
-      margin: 1rem;
+    #profile-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: .3rem;
+      padding: 1rem;
+      background-color: #e3f6ff;
+      border-top: 47px solid #2f2f68;
+      border-bottom: 40px solid #606060;
+      border-radius: 50%;
+      line-height: 1.5;
+    }
+    #profile-grid div {
+      grid-column: 1;
+    }
+    .item1 {
+      min-height: 250px;
+    }
+    .item2 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+    .project-gallery {
+      margin-left: unset;
+    }
+    #profile-section {
+      max-width: 100%;
+      margin: 5rem auto 15rem;
+      font-size: 1.1rem;
     }
     header span { display: none;}
+    article p {
+      width: 100%;
+    }
+    article h2, article h3, article h4, article h5, article h6 {
+      width: 100%;
+    }
   }
 

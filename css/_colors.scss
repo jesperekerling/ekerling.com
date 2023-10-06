@@ -37,10 +37,10 @@ html[class='dark_theme'] {
     a {
       color: $link-color-dark;
     }
-    .profile-grid a {
+    #profile-grid a {
       color: $profile-card-link-dark;
     }
-    .profile-grid h2, .profile-grid h3 {
+    #profile-grid h2, #profile-grid h3 {
       color: $profile-grid-color;
     }
 }

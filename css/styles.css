@@ -1,16 +1,3 @@
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue !important;
-  }
-  .profile-card ul li {
-    border-radius: 1rem;
-    padding: 2rem;
-    margin: 1rem;
-  }
-  header span {
-    display: none;
-  }
-}
 html[class=dark_theme] {
   background: #484848;
   color: #b8b8b8;
@@ -24,10 +11,10 @@ html[class=dark_theme] h2, html[class=dark_theme] h3, html[class=dark_theme] h4,
 html[class=dark_theme] a {
   color: #e1ff00;
 }
-html[class=dark_theme] .profile-grid a {
+html[class=dark_theme] #profile-grid a {
   color: darkblue;
 }
-html[class=dark_theme] .profile-grid h2, html[class=dark_theme] .profile-grid h3 {
+html[class=dark_theme] #profile-grid h2, html[class=dark_theme] #profile-grid h3 {
   color: #333;
 }
 
@@ -153,13 +140,13 @@ section {
   text-align: center;
 }
 
-.profile-section {
+#profile-section {
   max-width: 800px;
   margin: 5rem auto 15rem;
   font-size: 1.1rem;
 }
 
-.profile-grid {
+#profile-grid {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 2.3rem;
@@ -171,21 +158,21 @@ section {
   line-height: 1.5;
 }
 
-.profile-grid div img {
+#profile-grid div img {
   width: 150px;
   padding-bottom: 1rem;
 }
 
-.profile-grid a {
+#profile-grid a {
   color: #0017a2;
 }
 
-.profile-grid h2, .profile-grid h3 {
+#profile-grid h2, .profile-grid h3 {
   color: #333;
   margin-bottom: 1.5rem;
 }
 
-.profile-grid div {
+#profile-grid div {
   border-radius: 2rem;
   background-color: #fff;
   padding: 2.25rem;
@@ -196,7 +183,7 @@ section {
   font-size: 1rem;
 }
 
-.profile-grid div:hover {
+#profile-grid div:hover {
   box-shadow: 5px 5px 18px -10px;
 }
 
@@ -249,7 +236,7 @@ button:hover, button a:hover {
   cursor: pointer;
 }
 
-.projects h3 {
+#projects h3 {
   margin-top: 4rem;
 }
 
@@ -337,6 +324,47 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  #profile-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+    padding: 1rem;
+    background-color: #e3f6ff;
+    border-top: 47px solid #2f2f68;
+    border-bottom: 40px solid #606060;
+    border-radius: 50%;
+    line-height: 1.5;
+  }
+  #profile-grid div {
+    grid-column: 1;
+  }
+  .item1 {
+    min-height: 250px;
+  }
+  .item2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .project-gallery {
+    margin-left: unset;
+  }
+  #profile-section {
+    max-width: 100%;
+    margin: 5rem auto 15rem;
+    font-size: 1.1rem;
+  }
+  header span {
+    display: none;
+  }
+  article p {
+    width: 100%;
+  }
+  article h2, article h3, article h4, article h5, article h6 {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
