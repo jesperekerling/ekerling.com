@@ -1,7 +1,7 @@
 
 
 $bg-color: #f5f5f5;
-$bg-gradient: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+$bg-gradient: linear-gradient(0deg, #f5f5f5 0%, rgba(242,242,242,1) 100%);
 $primary-color: #444;
 $secondary-color: #202020;
 $link-color: #0017a2;
@@ -42,5 +42,8 @@ html[class='dark_theme'] {
     }
     #profile-grid h2, #profile-grid h3 {
       color: $profile-grid-color;
+    }
+    .sticky {
+      background-color: $bg-color-dark;
     }
 }
