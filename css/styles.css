@@ -385,9 +385,6 @@ input:checked + .slider:before {
     margin: 5rem auto 15rem;
     font-size: 1.1rem;
   }
-  header span {
-    display: none;
-  }
   article p {
     width: 100%;
   }
