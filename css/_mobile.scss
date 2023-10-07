@@ -16,7 +16,8 @@
     #profile-grid div {
       grid-column: 1;
       width: 100%;
-      padding: 1.5rem;
+      padding: 1.5rem !important;
+      border-radius: 1.3rem !important;
     }
     button {
       padding: 1.1rem;
