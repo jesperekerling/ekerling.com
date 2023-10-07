@@ -15,6 +15,11 @@
     }
     #profile-grid div {
       grid-column: 1;
+      width: 100%;
+      padding: 1.5rem;
+    }
+    button {
+      padding: 1.1rem;
     }
     .item1 {
       min-height: 250px;
@@ -25,6 +30,9 @@
     }
     .project-gallery {
       margin-left: unset;
+    }
+    .project-gallery img {
+      width: 100%;
     }
     #profile-section {
       max-width: 100%;
