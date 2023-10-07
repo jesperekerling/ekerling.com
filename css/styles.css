@@ -20,6 +20,9 @@ html[class=dark_theme] #profile-grid h2, html[class=dark_theme] #profile-grid h3
 html[class=dark_theme] .sticky {
   background-color: #484848;
 }
+html[class=dark_theme] svg {
+  fill: #fff;
+}
 
 @font-face {
   font-family: "Graphik";
@@ -130,11 +133,11 @@ h3 {
   position: sticky;
   top: 0;
   padding: 2rem 0 2rem;
-  font-size: 4rem;
+  font-size: 3rem;
   width: unset;
   background-color: #f5f5f5;
   text-align: center;
-  font-weight: 200;
+  font-weight: 500;
 }
 
 section {
@@ -261,6 +264,20 @@ button:hover, button a:hover {
   padding: 0;
 }
 
+h2 svg {
+  width: 40px;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  fill: #111;
+}
+
+svg {
+  width: 30px;
+  vertical-align: middle;
+  margin-right: 0.4rem;
+  fill: #111;
+}
+
 .switch-button {
   text-align: center;
   margin: 0 auto;
@@ -270,7 +287,7 @@ button:hover, button a:hover {
 .switch {
   position: relative;
   display: inline-block;
-  width: 118px;
+  width: 88px;
   height: 34px;
 }
 
@@ -321,9 +338,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(80px);
-  -ms-transform: translateX(80px);
-  transform: translateX(80px);
+  -webkit-transform: translateX(50px);
+  -ms-transform: translateX(50px);
+  transform: translateX(50px);
   background: white url("https://i.ibb.co/7JfqXxB/sunny.png");
   background-repeat: no-repeat;
   background-position: center;

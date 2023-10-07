@@ -46,4 +46,7 @@ html[class='dark_theme'] {
     .sticky {
       background-color: $bg-color-dark;
     }
+    svg {
+      fill: $h1-color-dark;
+    }
 }
