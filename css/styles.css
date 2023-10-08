@@ -68,7 +68,7 @@ header .logo {
   margin: 3rem;
   position: sticky;
   top: 20px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 main {
@@ -103,7 +103,7 @@ h1 {
 }
 
 article p {
-  font-size: 24px;
+  font-size: 0.9rem;
   line-height: 36px;
   width: 600px;
   margin: 1rem auto;
@@ -120,12 +120,12 @@ article button {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 2.2rem;
   margin-top: 10rem;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 1.3rem;
 }
 
 .sticky {
@@ -133,7 +133,6 @@ h3 {
   position: sticky;
   top: 0;
   padding: 2rem 0 2rem;
-  font-size: 3rem;
   width: unset;
   background-color: #f5f5f5;
   text-align: center;
