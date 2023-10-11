@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ekerling.com</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <meta name="description" content="Portfolio website about Jesper EKerling. Front end developer and IT Project Manager.">
-    <meta name="keyworda" content="Ekerling, Jesper, portfolio, front end, it project manager">
+    <link rel="stylesheet" href="./css/lightbox.min.css">
+        
+    <meta name="description" content="Portfolio website about Jesper Ekerling. Front end developer and IT Project Manager.">
+    <meta name="keywords" content="Ekerling, Jesper, portfolio, front end, it project manager">
     <script src="./js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     
 
     <meta property="og:title" content="Portfolio page for Jesper Ekerling">
     <meta property="og:description" content="Portfolio page for Jesper Ekerling with examples of previous projects.">
@@ -16,6 +20,7 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
 </head>
 
 <body>
@@ -64,7 +69,7 @@
                 <h2>About me</h2>
                 <p><span>38 years old, Stockholm, Sweden</span></p>
                 <p><span>Studying to <strong>Front End Developer</strong> at <a href="https://kyh.se/">KYH</a> (2023-2025)</span></p>
-                <p><a href=""><button>More about me</button></a></p>
+                <p><a href="about-me.html"><button>More about me</button></a></p>
             </div>
             <div class="item3">
                 <a href="https://www.linkedin.com/in/jesper-ekerling-5771b26b/"><img src="./img/logos/linkedin.png" alt="LinkedIn logo" width="150" height="37"></a><br>
@@ -101,7 +106,7 @@
                 <h3>
                     I'm an architect
                 </h3>
-                <p>In the Myers Ggibbs personality test they say that I'm a <a href="https://www.16personalities.com/intj-personality">INTJ personality</a>. I have a legit interest in computers. In my freetime I hang out a lot with friends and my girlfriend. In my freetime I enjoy walks, soccer and computer games. Starcraft 2 APM is around 150.</p>
+                <p>In the Myers-Briggs personality test they say that I'm a <a href="https://www.16personalities.com/intj-personality">INTJ personality</a>. I have a legit interest in computers. In my freetime I hang out a lot with friends and my girlfriend. In my freetime I enjoy walks, soccer and computer games. Starcraft 2 APM is around 150.</p>
             </article>
         </section>
 
@@ -144,10 +149,18 @@
                 <p>My role was Project Manager and Front End Developer.</p>
                 <p>Active years: 2013-now</p>
                 <p><a href="./projects/mynelly/MY-NELLY.pdf"><button>Watch Project PDF</button></a></p>
+
+
                 <div class="project-gallery">
-                    <a href="./projects/mynelly/Showroom1.png"><img src="./projects/mynelly/Showroom1-thumb.png" alt="Showroom example 1" title="Showroom example 1" width="362" height="357"></a>
-                    <a href="./projects/mynelly/Showroom2.png"><img src="./projects/mynelly/Showroom2-thumb.png" alt="Showroom example 2" title="Showroom example 2" width="362" height="351"></a>
-                    <a href="./projects/mynelly/Showroom3.png"><img src="./projects/mynelly/Showroom3-thumb.png" alt="Showroom example 3" title="Showroom example 3" width="362" height="356"></a>        
+                    <a href="./projects/mynelly/Showroom1.png" class="example-image-link" data-lightbox="example-set" data-title="Example from the digital showroom in MY:NELLY">
+                        <img src="./projects/mynelly/Showroom1-thumb.png" alt="Showroom example 1" title="Showroom example 1" width="362" height="357" class="example-image">
+                    </a>
+                    <a href="./projects/mynelly/Showroom2.png" class="example-image-link" data-lightbox="example-set" data-title="Example from the digital showroom in MY:NELLY">
+                        <img src="./projects/mynelly/Showroom2-thumb.png" alt="Showroom example 2" title="Showroom example 2" width="362" height="351" class="example-image">
+                    </a>
+                    <a href="./projects/mynelly/Showroom3.png" class="example-image-link" data-lightbox="example-set" data-title="Example from the digital showroom in MY:NELLY">
+                        <img src="./projects/mynelly/Showroom3-thumb.png" alt="Showroom example 3" title="Showroom example 3" width="362" height="356" class="example-image">
+                    </a>
                 </div>
             </article>
             <article>
@@ -183,5 +196,7 @@
         </p>
     </footer>
 
+    <script src=".//js/lightbox-plus-jquery.min.js"></script>
+    
 </body>
 </html>
