@@ -69,17 +69,18 @@ h2 {
     margin-top: 10rem;
 }
 h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 .sticky {
     display: block;
     position: sticky;
     top: 0;
-    padding: 2rem 0 2rem;
+    padding: 1.5rem 0 1.5rem;
     width: unset;
     background-color: $bg-color;
     text-align: center;
-    font-weight: 500;
+    font-weight: 800;
+    font-size: 1.5rem;
 }
 section {
     margin: 10rem 0;
@@ -141,10 +142,13 @@ section {
     grid-column-end: 4;
     line-height: 2;
     h2 {
-        font-size: 2rem;
-        margin-top: 2rem;
+        font-size: 1.8rem;
+        margin-top: 0;
         font-weight: bold;
     }
+}
+.item5 h3 {
+    margin-top: 0;
 }
 strong {
     font-weight: 600;
@@ -247,7 +251,7 @@ svg {
     -webkit-transition: 0.4s;
     transition: 0.4s;
     box-shadow: 0 0px 15px #2020203d;
-    background: white url('https://i.ibb.co/FxzBYR9/night.png');
+    background: white url('../img/icons/night.png');
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -264,7 +268,7 @@ svg {
     -webkit-transform: translateX(50px);
     -ms-transform: translateX(50px);
     transform: translateX(50px);
-    background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
+    background: white url('../img/icons/sunny.png');
     background-repeat: no-repeat;
     background-position: center;
   }
