@@ -10,8 +10,6 @@
     <meta name="description" content="Portfolio website about Jesper Ekerling. Front end developer and IT Project Manager.">
     <meta name="keywords" content="Ekerling, Jesper, portfolio, front end, it project manager">
     <script src="./js/index.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-     
 
     <meta property="og:title" content="Portfolio page for Jesper Ekerling">
     <meta property="og:description" content="Portfolio page for Jesper Ekerling with examples of previous projects.">
@@ -30,9 +28,9 @@
     </header>
     <main>
         <div class="theme-switcher">
-            <form aria-hidden="true">
-                <label id="switch" class="switch">
-                    <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <form>
+                <label id="switch" class="switch" for="slider">
+                    <input type="checkbox" onchange="toggleTheme()" id="slider" aria-label="Website theme change button">
                     <span class="slider round"></span>
                 </label>
             </form>
@@ -194,7 +192,7 @@
         </p>
     </footer>
 
-    <script src=".//js/lightbox-plus-jquery.min.js"></script>
+    <script src="./js/lightbox-plus-jquery.min.js"></script>
     
 </body>
 </html>
