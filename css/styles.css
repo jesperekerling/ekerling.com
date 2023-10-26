@@ -11,6 +11,9 @@ html[class=dark_theme] h2, html[class=dark_theme] h3, html[class=dark_theme] h4,
 html[class=dark_theme] a {
   color: #e1ff00;
 }
+html[class=dark_theme] a:hover {
+  color: rgb(152, 152, 3);
+}
 html[class=dark_theme] #profile-grid a {
   color: darkblue;
 }
