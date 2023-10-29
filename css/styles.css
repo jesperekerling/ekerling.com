@@ -164,9 +164,8 @@ section {
   gap: 2.3rem;
   padding: 10rem 3rem 10rem 3rem;
   background-color: #e3f6ff;
-  border-top: 47px solid #2f2f68;
-  border-bottom: 40px solid #606060;
-  border-radius: 50%;
+  border-bottom: 10px solid #606060;
+  border-radius: 0.5rem 0.5rem 1rem 1rem;
   line-height: 1.5;
 }
 
