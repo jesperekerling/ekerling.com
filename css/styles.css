@@ -11,6 +11,9 @@ html[class=dark_theme] h2, html[class=dark_theme] h3, html[class=dark_theme] h4,
 html[class=dark_theme] a {
   color: #e1ff00;
 }
+html[class=dark_theme] a:hover {
+  color: rgb(152, 152, 3);
+}
 html[class=dark_theme] #profile-grid a {
   color: darkblue;
 }
@@ -287,6 +290,10 @@ svg {
   margin: 0 auto;
 }
 
+.example-image {
+  object-fit: cover;
+}
+
 /* The switch - the box around the slider */
 .switch {
   position: relative;
@@ -363,7 +370,7 @@ input:checked + .slider:before {
   #profile-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 0.3rem;
+    gap: 0.8rem;
     padding: 1rem;
     background-color: #e3f6ff;
     border-top: 47px solid #2f2f68;

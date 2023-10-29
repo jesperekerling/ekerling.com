@@ -207,6 +207,10 @@ svg {
     margin: 0 auto;
 }
 
+.example-image {
+    object-fit: cover;
+}
+
 // CSS styles for theme switch button
  
   /* The switch - the box around the slider */
@@ -280,4 +284,5 @@ svg {
   .slider.round:before {
     border-radius: 50%;
   }
+  
   @import "mobile";

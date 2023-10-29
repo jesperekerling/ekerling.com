@@ -18,6 +18,7 @@ $profile-grid-color: #333;
 $bg-color-dark: #484848;
 $primary-color-dark: #b8b8b8;
 $link-color-dark: #e1ff00;
+$link-hover-color-dark: rgb(152, 152, 3);
 $h1-color-dark: #fff;
 $headline-color-dark: #eeffbb;
 $profile-card-link-dark: darkblue;
@@ -36,6 +37,9 @@ html[class='dark_theme'] {
     }
     a {
       color: $link-color-dark;
+    }
+    a:hover {
+      color: $link-hover-color-dark;
     }
     #profile-grid a {
       color: $profile-card-link-dark;
