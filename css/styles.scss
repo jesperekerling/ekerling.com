@@ -83,6 +83,9 @@ h2 {
 h3 {
     font-size: 1.2rem;
 }
+.text-center {
+    text-align: center;
+}
 .sticky {
     display: block;
     position: sticky;
@@ -198,14 +201,13 @@ button:hover, button a:hover {
     }
 }
 
-h2 svg {
-    width: 40px;
+.svg {
     vertical-align: middle;
-    margin-right: 0.5rem;
     fill: $h1-color;
+    text-align: center;
 }
 svg {
-    width: 30px;
+    width: 70px;
     vertical-align: middle;
     margin-right: 0.4rem;
     fill: $h1-color;
