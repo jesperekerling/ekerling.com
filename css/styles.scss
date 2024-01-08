@@ -17,15 +17,26 @@ html {
     padding-bottom: 5rem;
     max-width: 1600px;
 }
+body {
+    margin: 0;
+}
 header {
     width: 100%;
+    top: 0;
+    position: sticky;
+    background-color: $header-bg-color;
+    padding: 20px 5%;
+    display: flex;
 }
 header .logo {
     font-size: 20px;
-    margin: 3rem;
-    position: sticky;
-    top: 20px;
     font-weight: 500;
+    padding-top: 5px;
+    font-family: Inter;
+}
+header .theme-switcher {
+    margin-left: auto;
+    order: 2
 }
 main {
     padding: 1rem;
@@ -47,8 +58,9 @@ h2, h3, h4, h5, h6 {
 h1 {
     text-align: center;
     font-size: 70px;
-    font-weight: 500;
+    font-weight: 700;
     color: $h1-color;
+    padding-top: 5rem;
 }
 article p, article ul {
     font-size: 0.9rem;
@@ -85,10 +97,7 @@ h3 {
 section {
     margin: 10rem 0;
 }
-.theme-switcher {
-    margin: 0 auto;
-    text-align: center;
-}
+
 #profile-section {
     max-width: 800px;
     margin: 5rem auto 15rem;
@@ -217,8 +226,8 @@ svg {
   .switch {
     position: relative;
     display: inline-block;
-    width: 88px;
-    height: 34px;
+    width: 48px;
+    height: 24px;
   }
   
   /* Hide default HTML checkbox */
@@ -244,8 +253,8 @@ svg {
   .slider:before {
     position: absolute;
     content: "";
-    height: 40px;
-    width: 40px;
+    height: 32px;
+    width: 32px;
     left: 0px;
     bottom: 4px;
     top: 0;
@@ -260,17 +269,17 @@ svg {
   }
   
   input:checked + .slider {
-    background-color: #2196f3;
+    background-color: $link-color;
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #2196f3;
+    box-shadow: 0 0 1px $link-color;
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(50px);
-    -ms-transform: translateX(50px);
-    transform: translateX(50px);
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
     background: white url('../img/icons/sunny.png');
     background-repeat: no-repeat;
     background-position: center;
