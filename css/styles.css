@@ -4,7 +4,7 @@ html[class=dark_theme] {
   color: #b8c7d5;
 }
 html[class=dark_theme] header {
-  background-color: rgba(34, 34, 34, 0.7098039216);
+  background-color: rgba(34, 34, 34, 0.8392156863);
 }
 html[class=dark_theme] h1 {
   color: #fff;
@@ -23,6 +23,9 @@ html[class=dark_theme] #profile-grid a {
 }
 html[class=dark_theme] #profile-grid h2, html[class=dark_theme] #profile-grid h3 {
   color: #333;
+}
+html[class=dark_theme] .sticky {
+  background-color: rgba(34, 34, 34, 0.8392156863);
 }
 html[class=dark_theme] svg {
   fill: #fff;
@@ -409,6 +412,9 @@ input:checked + .slider:before {
     padding: 1.5rem !important;
     border-radius: 1.3rem !important;
   }
+  h1 {
+    font-size: 1.8rem;
+  }
   button {
     padding: 1.1rem;
   }
@@ -438,8 +444,13 @@ input:checked + .slider:before {
   }
   .sticky {
     top: 0;
-    padding: 1.5rem 0;
+    padding: 1rem 0 1rem 0;
     text-align: center;
+    top: 3.3rem;
+    background-color: rgba(255, 255, 255, 0.8784313725);
+    font-weight: 600;
+    font-family: Inter;
+    border-top: 2px solid #444;
   }
 }
 

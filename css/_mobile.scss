@@ -18,6 +18,9 @@
       padding: 1.5rem !important;
       border-radius: 1.3rem !important;
     }
+    h1 {
+      font-size: 1.8rem;
+    }
     button {
       padding: 1.1rem;
     }
@@ -48,8 +51,13 @@
     }
     .sticky {
       top: 0;
-      padding: 1.5rem 0;
+      padding: 1rem 0 1rem 0;
       text-align: center;
+      top: 3.3rem;
+      background-color: $header-bg-color;
+      font-weight: 600;
+      font-family: Inter;
+      border-top: 2px solid $primary-color;
     }
   }
 
