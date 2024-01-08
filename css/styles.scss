@@ -27,6 +27,7 @@ header {
     background-color: $header-bg-color;
     padding: 20px 5%;
     display: flex;
+    z-index: 1;
 }
 header .logo {
     font-size: 20px;
@@ -57,13 +58,18 @@ h2, h3, h4, h5, h6 {
 }
 h1 {
     text-align: center;
-    font-size: 70px;
-    font-weight: 700;
+    font-size: 100px;
+    font-weight: 600;
+    font-family: Inter;
     color: $h1-color;
-    padding-top: 5rem;
+    padding-top: 8rem;
+    transition: 1s ease-in-out;
+}
+h1:hover {
+    rotate: 2deg;
 }
 article p, article ul {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 30px;
     width: 600px;
     margin: 1rem auto;
@@ -90,12 +96,14 @@ h3 {
     display: block;
     position: sticky;
     top: 0;
-    padding: 1.5rem 0 1.5rem;
+    padding-top: 1rem;
     width: unset;
-    background-color: $bg-color;
+    //background-color: $header-bg-color;
     text-align: center;
     font-weight: 800;
     font-size: 1.5rem;
+    z-index: 2;
+    max-width: 600px;
 }
 section {
     margin: 10rem 0;
@@ -195,9 +203,9 @@ button:hover, button a:hover {
     display: inline-block;
     margin: 1rem;
     &:hover {
-        opacity: 0.5;
-        zoom: 110%;
+        opacity: 0.7;
         padding: 0;
+        transition: 0.1s ease-in-out;
     }
 }
 

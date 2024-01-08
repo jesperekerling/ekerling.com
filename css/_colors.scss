@@ -1,7 +1,7 @@
 
 
 $bg-color: #f5f5f5;
-$header-bg-color: #ffffff95;
+$header-bg-color: #ffffffe0;
 $bg-gradient: linear-gradient(0deg, #f5f5f5 0%, rgb(255, 255, 255) 100%);
 $primary-color: #444;
 $secondary-color: #202020;
@@ -16,14 +16,14 @@ $profile-grid-color: #333;
 
 
 // Dark theme colors
-$bg-color-dark: #484848;
-$header-bg-color-dark: #22222290;
-$primary-color-dark: #b8b8b8;
-$link-color-dark: #e1ff00;
-$link-hover-color-dark: rgb(152, 152, 3);
+$bg-color-dark: #292a33;
+$header-bg-color-dark: #222222b5;
+$primary-color-dark: #b8c7d5;
+$link-color-dark: #a7f3ff;
+$link-hover-color-dark: #fff;
 $h1-color-dark: #fff;
-$headline-color-dark: #eeffbb;
-$profile-card-link-dark: darkblue;
+$headline-color-dark: #fff;
+$profile-card-link-dark: #005aa2;
 // $bg-gradient-dark: linear-gradient(0deg, rgb(64, 64, 65) 0%, rgb(20, 20, 20) 100%);
 
 
@@ -51,9 +51,12 @@ html[class='dark_theme'] {
       color: $profile-grid-color;
     }
     .sticky {
-      background-color: $bg-color-dark;
+      //background-color: $header-bg-color-dark;
     }
     svg {
       fill: $h1-color-dark;
+    }
+    button {
+      background-color: $profile-card-link-dark;
     }
 }
