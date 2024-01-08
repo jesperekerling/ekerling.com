@@ -45,9 +45,11 @@
     //header span { display: none;}
     article p {
       width: 100%;
+      padding: 0 1rem;
     }
     article h2, article h3, article h4, article h5, article h6 {
       width: 100%;
+      padding: 0 1rem;
     }
     .sticky {
       top: 0;
@@ -58,6 +60,7 @@
       font-weight: 600;
       font-family: Inter;
       border-top: 2px solid $primary-color;
+      margin-bottom: 3rem
     }
   }
 

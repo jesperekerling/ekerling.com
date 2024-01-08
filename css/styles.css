@@ -4,7 +4,7 @@ html[class=dark_theme] {
   color: #b8c7d5;
 }
 html[class=dark_theme] header {
-  background-color: rgba(34, 34, 34, 0.8392156863);
+  background-color: rgba(34, 34, 34, 0.9294117647);
 }
 html[class=dark_theme] h1 {
   color: #fff;
@@ -24,8 +24,10 @@ html[class=dark_theme] #profile-grid a {
 html[class=dark_theme] #profile-grid h2, html[class=dark_theme] #profile-grid h3 {
   color: #333;
 }
-html[class=dark_theme] .sticky {
-  background-color: rgba(34, 34, 34, 0.8392156863);
+@media only screen and (max-width: 600px) {
+  html[class=dark_theme] .sticky {
+    background-color: rgba(34, 34, 34, 0.9294117647);
+  }
 }
 html[class=dark_theme] svg {
   fill: #fff;
@@ -96,7 +98,7 @@ header .theme-switcher {
 }
 
 main {
-  padding: 1rem;
+  padding: 0;
   margin: 0 auto;
 }
 
@@ -174,6 +176,8 @@ h3 {
   font-size: 1.5rem;
   z-index: 2;
   max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 section {
@@ -304,11 +308,18 @@ button:hover, button a:hover {
   text-align: center;
 }
 
-svg {
-  width: 70px;
+#profile-section svg {
+  width: 50px;
   vertical-align: middle;
-  margin-right: 0.4rem;
+  margin-left: 2rem;
+  margin-bottom: 0rem;
+}
+
+svg {
+  width: 60px;
+  vertical-align: middle;
   fill: #111;
+  margin-bottom: 2rem;
 }
 
 .switch-button {
@@ -438,9 +449,11 @@ input:checked + .slider:before {
   }
   article p {
     width: 100%;
+    padding: 0 1rem;
   }
   article h2, article h3, article h4, article h5, article h6 {
     width: 100%;
+    padding: 0 1rem;
   }
   .sticky {
     top: 0;
@@ -451,6 +464,7 @@ input:checked + .slider:before {
     font-weight: 600;
     font-family: Inter;
     border-top: 2px solid #444;
+    margin-bottom: 3rem;
   }
 }
 

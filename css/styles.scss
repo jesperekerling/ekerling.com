@@ -40,7 +40,7 @@ header .theme-switcher {
     order: 2
 }
 main {
-    padding: 1rem;
+    padding: 0;
     margin: 0 auto;
 }
 footer {
@@ -104,6 +104,8 @@ h3 {
     font-size: 1.5rem;
     z-index: 2;
     max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
 }
 section {
     margin: 10rem 0;
@@ -214,11 +216,18 @@ button:hover, button a:hover {
     fill: $h1-color;
     text-align: center;
 }
-svg {
-    width: 70px;
+#profile-section svg {
+    width: 50px;
     vertical-align: middle;
-    margin-right: 0.4rem;
+    margin-left: 2rem;
+    margin-bottom: 0rem;
+
+}
+svg {
+    width: 60px;
+    vertical-align: middle;
     fill: $h1-color;
+    margin-bottom: 2rem;
 }
 
 .switch-button {

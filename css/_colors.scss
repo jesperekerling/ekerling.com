@@ -17,7 +17,7 @@ $profile-grid-color: #333;
 
 // Dark theme colors
 $bg-color-dark: #292a33;
-$header-bg-color-dark: #222222d6;
+$header-bg-color-dark: #222222ed;
 $primary-color-dark: #b8c7d5;
 $link-color-dark: #a7f3ff;
 $link-hover-color-dark: #fff;
@@ -51,7 +51,12 @@ html[class='dark_theme'] {
       color: $profile-grid-color;
     }
     .sticky {
-      background-color: $header-bg-color-dark;
+      //background-color: $header-bg-color-dark;
+    }
+    @media only screen and (max-width: 600px) {
+      .sticky {
+        background-color: $header-bg-color-dark;
+      }
     }
     svg {
       fill: $h1-color-dark;
