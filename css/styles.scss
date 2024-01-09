@@ -45,6 +45,7 @@ main {
 }
 footer {
     text-align: center;
+    padding-top: 5rem;
 }
 a {
     color: $link-color;
@@ -67,6 +68,9 @@ h1 {
 }
 h1:hover {
     rotate: 2deg;
+}
+article {
+    padding-bottom: 3rem;
 }
 article p, article ul {
     font-size: 1rem;
@@ -195,7 +199,8 @@ button:hover, button a:hover {
     cursor: pointer;
 }
 #projects h3 {
-    margin-top: 4rem;
+    font-size: 2rem;
+    padding-top: 5rem;
 }
 .project-gallery {
     text-align: center;
@@ -219,15 +224,13 @@ button:hover, button a:hover {
 #profile-section svg {
     width: 50px;
     vertical-align: middle;
-    margin-left: 2rem;
-    margin-bottom: 0rem;
-
+    margin: 0 0.4rem 0 0;
 }
 svg {
     width: 60px;
     vertical-align: middle;
     fill: $h1-color;
-    margin-bottom: 2rem;
+    margin: 2rem;
 }
 
 .switch-button {

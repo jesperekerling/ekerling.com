@@ -43,9 +43,12 @@
       font-size: 1.1rem;
     }
     //header span { display: none;}
-    article p {
+    article p, article ul {
       width: 100%;
       padding: 0 1rem;
+    }
+    article ul {
+      padding-left: 1.8rem;
     }
     article h2, article h3, article h4, article h5, article h6 {
       width: 100%;

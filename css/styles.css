@@ -103,6 +103,7 @@ main {
 
 footer {
   text-align: center;
+  padding-top: 5rem;
 }
 
 a {
@@ -132,6 +133,10 @@ h1 {
 
 h1:hover {
   rotate: 2deg;
+}
+
+article {
+  padding-bottom: 3rem;
 }
 
 article p, article ul {
@@ -283,7 +288,8 @@ button:hover, button a:hover {
 }
 
 #projects h3 {
-  margin-top: 4rem;
+  font-size: 2rem;
+  padding-top: 5rem;
 }
 
 .project-gallery {
@@ -310,15 +316,14 @@ button:hover, button a:hover {
 #profile-section svg {
   width: 50px;
   vertical-align: middle;
-  margin-left: 2rem;
-  margin-bottom: 0rem;
+  margin: 0 0.4rem 0 0;
 }
 
 svg {
   width: 60px;
   vertical-align: middle;
   fill: #111;
-  margin-bottom: 2rem;
+  margin: 2rem;
 }
 
 .switch-button {
@@ -446,9 +451,12 @@ input:checked + .slider:before {
     margin: 5rem auto 15rem;
     font-size: 1.1rem;
   }
-  article p {
+  article p, article ul {
     width: 100%;
     padding: 0 1rem;
+  }
+  article ul {
+    padding-left: 1.8rem;
   }
   article h2, article h3, article h4, article h5, article h6 {
     width: 100%;
