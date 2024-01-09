@@ -50,9 +50,6 @@ html[class='dark_theme'] {
     #profile-grid h2, #profile-grid h3 {
       color: $profile-grid-color;
     }
-    .sticky {
-      //background-color: $header-bg-color-dark;
-    }
     @media only screen and (max-width: 600px) {
       .sticky {
         background-color: $header-bg-color-dark;
