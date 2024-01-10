@@ -48,11 +48,12 @@ html[class='dark_theme'] {
     }
     .hero-menu-div {
       background-color: $header-bg-color-dark;
-      border: 0px solid $primary-color-dark;
+      border: 3px solid $header-bg-color-dark;
       display: flex;
       font-weight: 600;
       padding: 1.8rem 2.5rem;
       margin: 2rem 1rem;
+      border-radius: .5rem;
     }
     .hero-link-text span {
       color: $primary-color-dark;
@@ -62,6 +63,10 @@ html[class='dark_theme'] {
       vertical-align: middle;
       margin: 0 1.2rem 0 0;
       fill: $primary-color-dark;
+    }
+    #profile-grid {
+      background-color: $header-bg-color-dark;
+      border-bottom: 10px solid #60606021;
     }
     #profile-grid a {
       color: $profile-card-link-dark;
