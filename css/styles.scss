@@ -77,6 +77,12 @@ h1:hover {
     padding: 1.8rem 2.5rem;
     margin: 2rem 1rem;
 }
+.hero-icon svg {
+    width: 50px;
+    vertical-align: middle;
+    margin: 0 1.2rem 0 0;
+    fill: $link-color;
+}
 .hero-link-text {
     flex: 1;
     margin-top: .2rem;
@@ -239,11 +245,6 @@ button:hover, button a:hover {
     vertical-align: middle;
     fill: $h1-color;
     text-align: center;
-}
-#profile-section svg {
-    width: 50px;
-    vertical-align: middle;
-    margin: 0 1.2rem 0 0;
 }
 svg {
     width: 60px;

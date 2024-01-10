@@ -18,6 +18,23 @@ html[class=dark_theme] a {
 html[class=dark_theme] a:hover {
   color: #fff;
 }
+html[class=dark_theme] .hero-menu-div {
+  background-color: rgba(34, 34, 34, 0.9294117647);
+  border: 0px solid #b8c7d5;
+  display: flex;
+  font-weight: 600;
+  padding: 1.8rem 2.5rem;
+  margin: 2rem 1rem;
+}
+html[class=dark_theme] .hero-link-text span {
+  color: #b8c7d5;
+}
+html[class=dark_theme] .hero-icon svg {
+  width: 50px;
+  vertical-align: middle;
+  margin: 0 1.2rem 0 0;
+  fill: #b8c7d5;
+}
 html[class=dark_theme] #profile-grid a {
   color: #005aa2;
 }
@@ -143,6 +160,13 @@ h1:hover {
   font-weight: 600;
   padding: 1.8rem 2.5rem;
   margin: 2rem 1rem;
+}
+
+.hero-icon svg {
+  width: 50px;
+  vertical-align: middle;
+  margin: 0 1.2rem 0 0;
+  fill: #0017a2;
 }
 
 .hero-link-text {
@@ -334,12 +358,6 @@ button:hover, button a:hover {
   vertical-align: middle;
   fill: #111;
   text-align: center;
-}
-
-#profile-section svg {
-  width: 50px;
-  vertical-align: middle;
-  margin: 0 1.2rem 0 0;
 }
 
 svg {

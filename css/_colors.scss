@@ -46,6 +46,23 @@ html[class='dark_theme'] {
     a:hover {
       color: $link-hover-color-dark;
     }
+    .hero-menu-div {
+      background-color: $header-bg-color-dark;
+      border: 0px solid $primary-color-dark;
+      display: flex;
+      font-weight: 600;
+      padding: 1.8rem 2.5rem;
+      margin: 2rem 1rem;
+    }
+    .hero-link-text span {
+      color: $primary-color-dark;
+    }
+    .hero-icon svg {
+      width: 50px;
+      vertical-align: middle;
+      margin: 0 1.2rem 0 0;
+      fill: $primary-color-dark;
+    }
     #profile-grid a {
       color: $profile-card-link-dark;
     }
