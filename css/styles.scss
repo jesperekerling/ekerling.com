@@ -77,6 +77,15 @@ h1:hover {
     padding: 1.8rem 2.5rem;
     margin: 2rem 1rem;
 }
+.hero-menu-div:hover {
+    background-color: $link-color;
+}
+.hero-menu-div:hover svg {
+    fill: #fff;
+}
+.hero-menu-div:hover .hero-link-text, .hero-menu-div:hover .hero-link-text span {
+    color: #fff;
+}
 .hero-icon svg {
     width: 50px;
     vertical-align: middle;
