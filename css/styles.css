@@ -101,7 +101,7 @@ header {
   width: 100%;
   top: 0;
   position: sticky;
-  background-color: rgba(255, 255, 255, 0.8784313725);
+  background-color: rgba(255, 255, 255, 0.9333333333);
   padding: 20px 5%;
   display: flex;
   z-index: 1;
@@ -531,7 +531,7 @@ input:checked + .slider:before {
     padding: 1rem 0 1rem 0;
     text-align: center;
     top: 3.3rem;
-    background-color: rgba(255, 255, 255, 0.8784313725);
+    background-color: rgba(255, 255, 255, 0.9333333333);
     font-weight: 600;
     font-family: Inter;
     border-top: 2px solid #eee;
