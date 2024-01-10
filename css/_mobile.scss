@@ -1,4 +1,7 @@
 @media only screen and (max-width: 600px) {
+  body {
+    font-size: 1rem;
+  }
   header {
     padding: 20px 8%;
   }
@@ -62,8 +65,9 @@
       background-color: $header-bg-color;
       font-weight: 600;
       font-family: Inter;
-      border-top: 2px solid $primary-color;
-      margin-bottom: 3rem
+      border-top: 2px solid $header-border-color;
+      margin-bottom: 3rem;
+      font-size: 1.2rem;
     }
   }
 

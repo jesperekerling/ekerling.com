@@ -27,6 +27,7 @@ html[class=dark_theme] #profile-grid h2, html[class=dark_theme] #profile-grid h3
 @media only screen and (max-width: 600px) {
   html[class=dark_theme] .sticky {
     background-color: rgba(34, 34, 34, 0.9294117647);
+    border-top: 2px solid #333;
   }
 }
 html[class=dark_theme] svg {
@@ -135,6 +136,28 @@ h1:hover {
   rotate: 2deg;
 }
 
+.hero-menu-div {
+  background-color: #fff;
+  border: 3px solid #0017a2;
+  display: flex;
+  font-weight: 600;
+  padding: 1.8rem 2.5rem;
+  margin: 2rem 1rem;
+}
+
+.hero-link-text {
+  flex: 1;
+  margin-top: 0.2rem;
+}
+
+.hero-link-text span {
+  color: #666;
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
 article {
   padding-bottom: 3rem;
 }
@@ -142,13 +165,13 @@ article {
 article p, article ul {
   font-size: 1rem;
   line-height: 30px;
-  width: 600px;
   margin: 1rem auto;
+  width: 600px;
 }
 
 article h2, article h3, article h4, article h5, article h6 {
-  width: 600px;
   margin: 2rem auto 1rem;
+  width: 600px;
 }
 
 article button {
@@ -316,7 +339,7 @@ button:hover, button a:hover {
 #profile-section svg {
   width: 50px;
   vertical-align: middle;
-  margin: 0 0.4rem 0 0;
+  margin: 0 1.2rem 0 0;
 }
 
 svg {
@@ -408,6 +431,9 @@ input:checked + .slider:before {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    font-size: 1rem;
+  }
   header {
     padding: 20px 8%;
   }
@@ -470,8 +496,9 @@ input:checked + .slider:before {
     background-color: rgba(255, 255, 255, 0.8784313725);
     font-weight: 600;
     font-family: Inter;
-    border-top: 2px solid #444;
+    border-top: 2px solid #eee;
     margin-bottom: 3rem;
+    font-size: 1.2rem;
   }
 }
 

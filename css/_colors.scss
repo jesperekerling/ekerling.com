@@ -2,6 +2,7 @@
 
 $bg-color: #f5f5f5;
 $header-bg-color: #ffffffe0;
+$header-border-color: #eee;
 $bg-gradient: linear-gradient(0deg, #f5f5f5 0%, rgb(255, 255, 255) 100%);
 $primary-color: #444;
 $secondary-color: #202020;
@@ -18,6 +19,7 @@ $profile-grid-color: #333;
 // Dark theme colors
 $bg-color-dark: #292a33;
 $header-bg-color-dark: #222222ed;
+$header-border-color-dark: #333;
 $primary-color-dark: #b8c7d5;
 $link-color-dark: #a7f3ff;
 $link-hover-color-dark: #fff;
@@ -53,6 +55,7 @@ html[class='dark_theme'] {
     @media only screen and (max-width: 600px) {
       .sticky {
         background-color: $header-bg-color-dark;
+        border-top: 2px solid $header-border-color-dark;
       }
     }
     svg {
