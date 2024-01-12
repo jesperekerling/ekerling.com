@@ -362,8 +362,12 @@ button:hover, button a:hover {
 }
 
 .project-gallery img {
-  width: 400px;
+  width: 300px;
   display: inline-block;
+  aspect-ratio: 1/1;
+  height: unset;
+  border-radius: 0.4rem;
+  object-position: top;
   margin: 1rem;
 }
 .project-gallery img:hover {
