@@ -233,12 +233,22 @@ button:hover, button a:hover {
     color: $button-text-color;
     cursor: pointer;
 }
+.divider {
+    padding: 5rem 0;
+}
+.divider hr {
+    max-width: 70px;
+    border: 4px solid $primary-color-dark;
+    border-radius: 13px;
+}
 #projects h3 {
     font-size: 2rem;
     padding-top: 5rem;
 }
 .project-gallery {
     text-align: center;
+    margin: 0 auto;
+    max-width: 1500px;
 }
 .project-gallery img {
     width: 300px;
