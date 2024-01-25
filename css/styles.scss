@@ -258,10 +258,11 @@ button:hover, button a:hover {
     border-radius: 0.4rem;
     object-position: top;
     margin: 1rem;
+    box-shadow: $img-box-shadow;
     &:hover {
         opacity: 0.7;
         padding: 0;
-        transition: 0.1s ease-in-out;
+        transition: 0.15s ease-in-out;
     }
 }
 

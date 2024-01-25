@@ -14,6 +14,7 @@ $button-text-hover-bgcolor: #000;
 $h1-color: #111;
 $profile-card-link: #0017a2;
 $profile-grid-color: #333;
+$img-box-shadow: 2px 2px 2px #eee;
 
 
 // Dark theme colors
@@ -26,6 +27,7 @@ $link-hover-color-dark: #fff;
 $h1-color-dark: #fff;
 $headline-color-dark: #fff;
 $profile-card-link-dark: #005aa2;
+$img-box-shadow-dark: 2px 2px 2px #00000054;
 // $bg-gradient-dark: linear-gradient(0deg, rgb(64, 64, 65) 0%, rgb(20, 20, 20) 100%);
 
 
@@ -63,6 +65,9 @@ html[class='dark_theme'] {
       vertical-align: middle;
       margin: 0 1.2rem 0 0;
       fill: $primary-color-dark;
+    }
+    .project-gallery img {
+      box-shadow: $img-box-shadow-dark;
     }
     #profile-grid {
       background-color: $header-bg-color-dark;
