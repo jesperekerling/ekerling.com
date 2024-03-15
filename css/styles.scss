@@ -10,7 +10,7 @@
 html {
     background: $bg-color;
     //background: $bg-gradient;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: $font-stack;
     color: $primary-color;
     margin: 0 auto;
@@ -59,15 +59,21 @@ h2, h3, h4, h5, h6 {
 }
 h1 {
     text-align: center;
-    font-size: 100px;
+    font-size: 4rem;
     font-weight: 600;
     font-family: Inter;
     color: $h1-color;
-    padding-top: 8rem;
+    padding-top: 5rem;
     transition: 1s ease-in-out;
 }
 h1:hover {
     rotate: 2deg;
+}
+.under-h1 {
+    margin: -1rem auto 0;
+    text-align: center;
+    color: #777;
+    font-size: 1.3rem;
 }
 .hero-menu-div {
     background-color: #fff;
@@ -94,15 +100,16 @@ h1:hover {
 }
 .hero-link-text {
     flex: 1;
-    margin-top: .2rem;
+    margin-top: .3rem;
     font-weight: 600;
+    font-size: 1.1rem;
 }
 .hero-link-text span {
     color: #666;
     display: block;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 400;
-    margin-top: 0.5rem;
+    margin-top: 0.6rem;
 }
 article {
     padding-bottom: 3rem;
@@ -111,19 +118,19 @@ article p, article ul {
     font-size: 1rem;
     line-height: 30px;
     margin: 1rem auto;
-    width: 600px;
+    width: 640px;
 }
 article h2, article h3, article h4, article h5, article h6 {
     margin: 2rem auto 1rem;
-    width: 600px;
+    width: 640px;
 }
 article button {
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 640px;
 }
 h2 {
     font-size: 2.2rem;
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 h3 {
     font-size: 1.2rem;
@@ -137,22 +144,21 @@ h3 {
     top: 0;
     padding-top: 1rem;
     width: unset;
-    //background-color: $header-bg-color;
     text-align: center;
     font-weight: 800;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     z-index: 2;
     max-width: 600px;
     text-align: center;
     margin: 0 auto;
 }
 section {
-    margin: 10rem 0;
+    margin: 7rem 0;
 }
 
 #profile-section {
     max-width: 800px;
-    margin: 5rem auto 15rem;
+    margin: 5rem auto 5rem;
     font-size: 1.1rem;
 }
 #profile-grid {
@@ -247,7 +253,7 @@ button:hover, button a:hover {
 .project-gallery {
     text-align: center;
     margin: 0 auto;
-    max-width: 1500px;
+    max-width: 800px;
 }
 .project-gallery img {
     width: 300px;
@@ -261,9 +267,11 @@ button:hover, button a:hover {
     &:hover {
         opacity: 0.7;
         padding: 0;
-        transition: 0.15s ease-in-out;
+        transition: 0.2s ease-in-out;
+        rotate: 1deg;
     }
 }
+
 h4 a {
     text-decoration: underline;
 }
@@ -287,6 +295,59 @@ svg {
 
 .example-image {
     object-fit: cover;
+}
+
+// Work history section
+.work-div {
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #666;
+    padding: 1em 2rem;
+    margin: 2rem auto;
+    max-width: 640px;
+    display: block;
+}
+.work-div:hover {
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+.work-div .project-img {
+    width: 3rem;
+    height: 3rem;
+}
+.work-div h3 {
+    padding: 1rem 0 2rem;
+    margin: 0;
+}
+
+#work-tools ul {
+    padding: 0;
+    margin: 0 auto 3rem;
+}
+
+#work-tools li {
+    display: inline-block;
+    padding: .5rem 1rem;
+    margin: .3rem .5rem .4rem 0;
+    background-color: #fff;
+    border-radius: .4rem;
+    font-size: 85%;
+    white-space: nowrap;
+    color: #01179d;
+    box-shadow: 1px 1px 1px 1px #eee;
+    font-weight: 600;
+}
+#work-tools li:hover {
+    rotate: 3deg;
+    text-decoration-color: #000;
+}
+
+#work-tools li svg, #work-tools li img {
+    width: 1rem;
+    height: 1rem;
+    margin: 0;
+    vertical-align: sub;
+    padding-right: .15rem;
 }
 
 // CSS styles for theme switch button
