@@ -145,6 +145,8 @@ a {
 
 a:hover {
   color: #2a48ff;
+  rotate: 1deg;
+  display: inline-flex;
 }
 
 h2, h3, h4, h5, h6 {
@@ -159,13 +161,22 @@ h1 {
   font-family: Inter;
   color: #111;
   padding-top: 5rem;
-  transition: 1s ease-in-out;
+  transition: 3s ease-in-out;
 }
 
 h1:hover {
-  rotate: 2deg;
+  animation: rotation 3s infinite ease-in-out;
+  rotate: 6deg;
 }
 
+@keyframes rotation {
+  50% {
+    transform: rotate(6deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .under-h1 {
   margin: -1rem auto 0;
   text-align: center;
@@ -184,6 +195,8 @@ h1:hover {
 
 .hero-menu-div:hover {
   background-color: #0017a2;
+  display: flex;
+  rotate: 0deg;
 }
 
 .hero-menu-div:hover svg {
