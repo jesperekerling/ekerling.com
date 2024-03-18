@@ -603,7 +603,7 @@ input:checked + .slider:before {
     font-size: 1.8rem;
   }
   button {
-    padding: 1.1rem;
+    padding: 1.1rem 2rem;
   }
   .item1 {
     min-height: 250px;
