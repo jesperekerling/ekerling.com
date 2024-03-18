@@ -54,6 +54,11 @@ html[class=dark_theme] #profile-grid a {
 html[class=dark_theme] #profile-grid h2, html[class=dark_theme] #profile-grid h3 {
   color: #333;
 }
+html[class=dark_theme] #work-tools li a, html[class=dark_theme] #work-tools li {
+  color: #a7f3ff;
+  background-color: #3e3e45;
+  box-shadow: none;
+}
 @media only screen and (max-width: 600px) {
   html[class=dark_theme] .sticky {
     background-color: rgba(34, 34, 34, 0.9294117647);
@@ -486,9 +491,13 @@ svg {
   border-radius: 0.4rem;
   font-size: 85%;
   white-space: nowrap;
-  color: #01179d;
+  color: #0017a2;
   box-shadow: 1px 1px 1px 1px #eee;
   font-weight: 600;
+}
+
+#work-tools li a {
+  color: #0017a2;
 }
 
 #work-tools li:hover {

@@ -351,9 +351,12 @@ svg {
     border-radius: .4rem;
     font-size: 85%;
     white-space: nowrap;
-    color: #01179d;
+    color: $link-color;
     box-shadow: 1px 1px 1px 1px #eee;
     font-weight: 600;
+}
+#work-tools li a {
+    color: $link-color;
 }
 #work-tools li:hover {
     rotate: 3deg;
