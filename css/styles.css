@@ -282,7 +282,7 @@ section {
   margin: 7rem 0;
 }
 
-#profile-section {
+#hero-section {
   max-width: 800px;
   margin: 5rem auto 5rem;
   font-size: 1.1rem;
@@ -399,6 +399,10 @@ button:hover, button a:hover {
   text-align: center;
   margin: 0 auto;
   max-width: 800px;
+}
+
+.project-gallery a:hover {
+  display: inline-block;
 }
 
 .project-gallery img {
