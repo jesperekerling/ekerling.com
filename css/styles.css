@@ -59,6 +59,13 @@ html[class=dark_theme] #work-tools li a, html[class=dark_theme] #work-tools li {
   background-color: #3e3e45;
   box-shadow: none;
 }
+html[class=dark_theme] .work-div {
+  background-color: rgba(34, 34, 34, 0.9294117647);
+  border: 1px solid rgba(74, 74, 74, 0.54);
+}
+html[class=dark_theme] .work-div h3 {
+  color: #f5f5f5;
+}
 @media only screen and (max-width: 600px) {
   html[class=dark_theme] .sticky {
     background-color: rgba(34, 34, 34, 0.9294117647);
