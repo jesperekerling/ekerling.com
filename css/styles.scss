@@ -55,7 +55,7 @@ a {
 a:hover {
     color: $link-hover-color;
     rotate: 1deg;
-    display: inline-flex;
+    //display: inline-flex;
 }
 h2, h3, h4, h5, h6 {
     color: $secondary-color;
@@ -85,11 +85,11 @@ h1:hover {
 .under-h1 {
     margin: -1rem auto 0;
     text-align: center;
-    color: #777;
+    color: $primary-color;
     font-size: 1.3rem;
 }
 .hero-menu-div {
-    background-color: #fff;
+    background-color: $button-text-color;
     border: 3px solid $button-color;
     display: flex;
     font-weight: 600;
@@ -337,12 +337,12 @@ svg {
     margin: 0;
 }
 
-#work-tools ul {
+.tags ul {
     padding: 0 0 0 0.5rem;
     margin: 0 auto 3rem;
 }
 
-#work-tools li {
+.tags li {
     display: inline-block;
     padding: .5rem 1rem;
     margin: .3rem .3rem .4rem .3rem;
@@ -351,23 +351,47 @@ svg {
     font-size: 85%;
     white-space: nowrap;
     color: $link-color;
-    box-shadow: 1px 1px 1px 1px #eee;
+    box-shadow: 1px 1px 1px 1px $img-box-shadow;
     font-weight: 600;
 }
-#work-tools li a {
+.tags li a {
     color: $link-color;
 }
-#work-tools li:hover {
+.tags li:hover {
     rotate: 3deg;
-    text-decoration-color: #000;
+    background-color: $taghover;
+}
+.tags li:hover a {
+    rotate: 3deg;
+    color: #000;
+    background-color: $taghover;
 }
 
-#work-tools li svg, #work-tools li img {
+.tags li svg, .tags li img {
     width: 1rem;
     height: 1rem;
     margin: 0;
     vertical-align: sub;
     padding-right: .15rem;
+}
+.linkedin, .linkedin a {
+    background-color: #0a66c2 !important;
+}
+.linkedin a {
+    color: #fff !important;
+}
+.linkedin svg {
+    fill: #fff;
+}
+.github, .github a {
+    background-color: #000 !important;
+}
+.github a {
+    color: #fff !important;
+    width: 50%;
+}
+.github svg {
+    fill: #fff;
 }
 
 // CSS styles for theme switch button
@@ -443,6 +467,55 @@ svg {
   .slider.round:before {
     border-radius: 50%;
   }
+
   
+    .tooltip {
+        position: relative;
+    }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 200px;
+        background-color: $bg-color-dark;
+        color: $button-text-color;
+        text-align: center;
+        border-radius: 1rem;
+        padding: 1rem;
+        position: absolute;
+        z-index: 1;
+        bottom: 85%;
+        left: 50%;
+        margin-left: -100px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        font-size: 90%;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
+    .tooltip .tooltiptext {
+        &::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: $bg-color-dark transparent transparent transparent;
+        }
+    }
+    .tooltip img {
+        transition: all 1s ease-in-out;
+    }
+    
+    .tooltip:hover img {
+        transform: rotate(360deg);
+    }
+    .text-left {
+        text-align: left !important;
+    }
   
   @import "mobile";
