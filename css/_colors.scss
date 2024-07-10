@@ -102,6 +102,11 @@ html[class='dark_theme'] {
     .tags li a, .tags li {
       color: $link-color-dark;
     }
+    .tags li:hover, .tags li:hover a {
+      rotate: 3deg;
+      background-color: $taghover;
+      color: #000;
+    }
     .under-h1 {
       color: $primary-color-dark;
     }

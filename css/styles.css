@@ -73,6 +73,11 @@ html[class=dark_theme] .tags li {
 html[class=dark_theme] .tags li a, html[class=dark_theme] .tags li {
   color: #a7f3ff;
 }
+html[class=dark_theme] .tags li:hover, html[class=dark_theme] .tags li:hover a {
+  rotate: 3deg;
+  background-color: #e0f6ff;
+  color: #000;
+}
 html[class=dark_theme] .under-h1 {
   color: #b8c7d5;
 }
@@ -527,7 +532,6 @@ svg {
 .tags li:hover a {
   rotate: 3deg;
   color: #000;
-  background-color: #e0f6ff;
 }
 
 .tags li svg, .tags li img {
