@@ -14,7 +14,6 @@ html {
     font-family: $font-stack;
     color: $primary-color;
     margin: 0 auto;
-    padding-bottom: 5rem;
     //max-width: 1600px;
 }
 body {
@@ -45,7 +44,8 @@ main {
 }
 footer {
     text-align: center;
-    padding-top: 5rem;
+    padding: 5rem 0;
+    background-color: $header-bg-color;
 }
 a {
     color: $link-color;
@@ -172,7 +172,7 @@ section {
 }
 
 #hero-section {
-    max-width: 800px;
+    max-width: 700px;
     margin: 5rem auto 5rem;
     font-size: 1.1rem;
 }
@@ -299,8 +299,10 @@ h4 a {
     fill: $h1-color;
     text-align: center;
 }
+.svg svg {
+    width: 60px;;
+}
 svg {
-    width: 60px;
     vertical-align: middle;
     fill: $h1-color;
     margin: 2rem;
@@ -319,22 +321,39 @@ svg {
 .work-div {
     background-color: #fff;
     border-radius: 5px;
-    border: 1px solid #666;
-    padding: 1em 2rem;
-    margin: 2rem auto;
+    padding: 4em;
+    margin: 5rem auto;
     max-width: 640px;
     display: block;
 }
-.work-div:hover {
-    background-color: #ffffff10;
+
+.work-div svg {
+    padding-bottom: 1.5rem;
+    margin: 0;
+    max-width: 170px;
+    max-height: 80px;
+    text-align: center;
 }
+.work-div span {
+    width: 30%;
+    display: inline-block;
+    font-weight: bold;
+}
+.work-div h3, .work-div h4, .work-div details {
+    padding: 2rem 0 0;
+    margin: 0;
+    font-weight: boldM;
+}
+.work-div .url, .work-div h4{
+    padding-bottom: 1.5rem;
+}
+.work-div p {
+    width: auto;
+}
+
 .work-div .project-img {
     width: 3rem;
     height: 3rem;
-}
-.work-div h3 {
-    padding: 1rem 0 2rem;
-    margin: 0;
 }
 
 .tags ul {
@@ -351,7 +370,7 @@ svg {
     font-size: 85%;
     white-space: nowrap;
     color: $link-color;
-    box-shadow: 1px 1px 1px 1px $img-box-shadow;
+    box-shadow: $img-box-shadow;
     font-weight: 600;
 }
 .tags li a {
@@ -374,23 +393,23 @@ svg {
     padding-right: .15rem;
 }
 .linkedin, .linkedin a {
-    background-color: #0a66c2 !important;
+    background-color: #fff !important;
 }
 .linkedin a {
-    color: #fff !important;
+    color: #000000 !important;
 }
 .linkedin svg {
-    fill: #fff;
+    fill: #000000;
 }
 .github, .github a {
-    background-color: #000 !important;
+    background-color: #fff !important;
 }
 .github a {
-    color: #fff !important;
+    color: #000000 !important;
     width: 50%;
 }
 .github svg {
-    fill: #fff;
+    fill: #000000;
 }
 
 // CSS styles for theme switch button

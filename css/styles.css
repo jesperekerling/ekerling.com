@@ -5,11 +5,11 @@
 }
 
 html[class=dark_theme] {
-  background: #292a33;
+  background: #28292b;
   color: #b8c7d5;
 }
 html[class=dark_theme] header {
-  background-color: rgba(34, 34, 34, 0.9294117647);
+  background-color: rgba(25, 26, 29, 0.6784313725);
 }
 html[class=dark_theme] h1 {
   color: #fff;
@@ -24,8 +24,8 @@ html[class=dark_theme] a:hover {
   color: #fff;
 }
 html[class=dark_theme] .hero-menu-div {
-  background-color: rgba(34, 34, 34, 0.9294117647);
-  border: 3px solid rgba(34, 34, 34, 0.9294117647);
+  background-color: rgba(25, 26, 29, 0.6784313725);
+  border: 3px solid transparent;
   display: flex;
   font-weight: 600;
   padding: 1.8rem 2.5rem;
@@ -42,14 +42,14 @@ html[class=dark_theme] .hero-icon svg {
   fill: #b8c7d5;
 }
 html[class=dark_theme] .project-gallery img {
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3294117647);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3294117647);
 }
 html[class=dark_theme] #profile-grid {
-  background-color: rgba(34, 34, 34, 0.9294117647);
+  background-color: rgba(25, 26, 29, 0.6784313725);
   border-bottom: 10px solid rgba(96, 96, 96, 0.1294117647);
 }
 html[class=dark_theme] #profile-grid a {
-  color: #005aa2;
+  color: #44486b;
 }
 html[class=dark_theme] #profile-grid h2, html[class=dark_theme] #profile-grid h3 {
   color: #333;
@@ -67,8 +67,8 @@ html[class=dark_theme] .work-div h3 {
   color: #f5f5f5;
 }
 html[class=dark_theme] .tags li {
-  background-color: rgba(34, 34, 34, 0.9294117647);
-  box-shadow: 1px 1px 1px 1px 2px 2px 2px rgba(0, 0, 0, 0.3294117647);
+  background-color: #30313b;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3294117647);
 }
 html[class=dark_theme] .tags li a, html[class=dark_theme] .tags li {
   color: #a7f3ff;
@@ -82,12 +82,19 @@ html[class=dark_theme] .under-h1 {
   color: #b8c7d5;
 }
 html[class=dark_theme] .tooltip .tooltiptext {
-  background-color: rgba(34, 34, 34, 0.9294117647);
+  background-color: rgba(25, 26, 29, 0.6784313725);
   color: #fff;
+}
+html[class=dark_theme] footer {
+  background-color: rgba(25, 26, 29, 0.6784313725);
+  color: #b8c7d5;
+}
+html[class=dark_theme] .github svg, html[class=dark_theme] .linkedin svg {
+  fill: #000000;
 }
 @media only screen and (max-width: 600px) {
   html[class=dark_theme] .sticky {
-    background-color: rgba(34, 34, 34, 0.9294117647);
+    background-color: rgba(25, 26, 29, 0.6784313725);
     border-top: 2px solid #333;
   }
 }
@@ -95,7 +102,7 @@ html[class=dark_theme] svg {
   fill: #fff;
 }
 html[class=dark_theme] button {
-  background-color: #005aa2;
+  background-color: #44486b;
 }
 
 @font-face {
@@ -129,7 +136,6 @@ html {
   font-family: Graphik, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #444;
   margin: 0 auto;
-  padding-bottom: 5rem;
 }
 
 body {
@@ -165,7 +171,8 @@ main {
 
 footer {
   text-align: center;
-  padding-top: 5rem;
+  padding: 5rem 0;
+  background-color: rgba(255, 255, 255, 0.9333333333);
 }
 
 a {
@@ -313,7 +320,7 @@ section {
 }
 
 #hero-section {
-  max-width: 800px;
+  max-width: 700px;
   margin: 5rem auto 5rem;
   font-size: 1.1rem;
 }
@@ -462,8 +469,11 @@ h4 a {
   text-align: center;
 }
 
-svg {
+.svg svg {
   width: 60px;
+}
+
+svg {
   vertical-align: middle;
   fill: #111;
   margin: 2rem;
@@ -481,25 +491,43 @@ svg {
 .work-div {
   background-color: #fff;
   border-radius: 5px;
-  border: 1px solid #666;
-  padding: 1em 2rem;
-  margin: 2rem auto;
+  padding: 4em;
+  margin: 5rem auto;
   max-width: 640px;
   display: block;
 }
 
-.work-div:hover {
-  background-color: rgba(255, 255, 255, 0.062745098);
+.work-div svg {
+  padding-bottom: 1.5rem;
+  margin: 0;
+  max-width: 170px;
+  max-height: 80px;
+  text-align: center;
+}
+
+.work-div span {
+  width: 30%;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.work-div h3, .work-div h4, .work-div details {
+  padding: 2rem 0 0;
+  margin: 0;
+  font-weight: boldM;
+}
+
+.work-div .url, .work-div h4 {
+  padding-bottom: 1.5rem;
+}
+
+.work-div p {
+  width: auto;
 }
 
 .work-div .project-img {
   width: 3rem;
   height: 3rem;
-}
-
-.work-div h3 {
-  padding: 1rem 0 2rem;
-  margin: 0;
 }
 
 .tags ul {
@@ -516,7 +544,7 @@ svg {
   font-size: 85%;
   white-space: nowrap;
   color: #0017a2;
-  box-shadow: 1px 1px 1px 1px 2px 2px 2px #eee;
+  box-shadow: 2px 2px 2px #eee;
   font-weight: 600;
 }
 
@@ -543,28 +571,28 @@ svg {
 }
 
 .linkedin, .linkedin a {
-  background-color: #0a66c2 !important;
+  background-color: #fff !important;
 }
 
 .linkedin a {
-  color: #fff !important;
+  color: #000000 !important;
 }
 
 .linkedin svg {
-  fill: #fff;
+  fill: #000000;
 }
 
 .github, .github a {
-  background-color: #000 !important;
+  background-color: #fff !important;
 }
 
 .github a {
-  color: #fff !important;
+  color: #000000 !important;
   width: 50%;
 }
 
 .github svg {
-  fill: #fff;
+  fill: #000000;
 }
 
 /* The switch - the box around the slider */
@@ -646,7 +674,7 @@ input:checked + .slider:before {
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 200px;
-  background-color: #292a33;
+  background-color: #28292b;
   color: #fff;
   text-align: center;
   border-radius: 1rem;
@@ -674,7 +702,7 @@ input:checked + .slider:before {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #292a33 transparent transparent transparent;
+  border-color: #28292b transparent transparent transparent;
 }
 
 .tooltip img {
@@ -698,6 +726,9 @@ input:checked + .slider:before {
   }
   header .logo {
     padding-top: 0;
+  }
+  .hero-menu-div {
+    margin: 8%;
   }
   #profile-grid {
     display: grid;
@@ -760,6 +791,18 @@ input:checked + .slider:before {
     border-top: 1px solid #eee;
     margin-bottom: 3rem;
     font-size: 1.2rem;
+  }
+  .work-div {
+    padding: 2rem;
+    margin: 8%;
+  }
+  .work-div p {
+    padding: 0;
+  }
+  .work-div span {
+    width: 80%;
+    display: block;
+    font-weight: bold;
   }
 }
 

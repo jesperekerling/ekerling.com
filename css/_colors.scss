@@ -22,16 +22,17 @@ $taghover: #e0f6ff;
 
 
 // Dark theme colors
-$bg-color-dark: #292a33;
-$header-bg-color-dark: #222222ed;
+$bg-color-dark: #28292b;
+$header-bg-color-dark: #191a1dad;
 $header-border-color-dark: #333;
 $primary-color-dark: #b8c7d5;
 $link-color-dark: #a7f3ff;
 $link-hover-color-dark: #fff;
 $h1-color-dark: #fff;
+$tag-bg-color-dark: #31344a;
 $headline-color-dark: #fff;
-$profile-card-link-dark: #005aa2;
-$img-box-shadow-dark: 2px 2px 2px #00000054;
+$profile-card-link-dark: #44486b;
+$img-box-shadow-dark: 1px 1px 3px #00000054;
 // $bg-gradient-dark: linear-gradient(0deg, rgb(64, 64, 65) 0%, rgb(20, 20, 20) 100%);
 
 
@@ -54,7 +55,7 @@ html[class='dark_theme'] {
     }
     .hero-menu-div {
       background-color: $header-bg-color-dark;
-      border: 3px solid $header-bg-color-dark;
+      border: 3px solid transparent;
       display: flex;
       font-weight: 600;
       padding: 1.8rem 2.5rem;
@@ -96,8 +97,8 @@ html[class='dark_theme'] {
       color: $bg-color;
     }
     .tags li {
-      background-color: $header-bg-color-dark;
-      box-shadow: 1px 1px 1px 1px $img-box-shadow-dark;
+      background-color: #30313b;
+      box-shadow: $img-box-shadow-dark;
     }
     .tags li a, .tags li {
       color: $link-color-dark;
@@ -113,6 +114,13 @@ html[class='dark_theme'] {
     .tooltip .tooltiptext {
       background-color: $header-bg-color-dark;
       color: $button-text-color;
+    }
+    footer {
+      background-color: $header-bg-color-dark;
+      color: $primary-color-dark;
+    }
+    .github svg, .linkedin svg {
+      fill: #000000;
     }
     @media only screen and (max-width: 600px) {
       .sticky {
