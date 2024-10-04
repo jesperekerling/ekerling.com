@@ -293,7 +293,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .text-center {
@@ -531,7 +531,7 @@ svg {
 }
 
 .tags ul {
-  padding: 0 0 0 0.5rem;
+  padding: 0 0 0 0.1rem;
   margin: 0 auto 3rem;
 }
 
@@ -745,6 +745,9 @@ input:checked + .slider:before {
   }
   h1 {
     font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.6rem;
   }
   button {
     padding: 1.1rem 2rem;
