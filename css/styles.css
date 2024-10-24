@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
 ::selection {
   background-color: #f6e204;
   color: #000;
@@ -751,6 +751,9 @@ input:checked + .slider:before {
   }
   button {
     padding: 1.1rem 2rem;
+  }
+  .under-h1 {
+    margin: 0 auto;
   }
   .item1 {
     min-height: 250px;
