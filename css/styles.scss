@@ -1,18 +1,17 @@
-
-@import "colors";
-@import "fonts";
-
+@use "colors";
+@use "fonts";
+@use "mobile";
 
 * {
     box-sizing: border-box;
 }
   
 html {
-    background: $bg-color;
-    //background: $bg-gradient;
+    background: colors.$bg-color;
+    //background: colors.$bg-gradient;
     font-size: 1rem;
-    font-family: $font-stack;
-    color: $primary-color;
+    font-family: fonts.$font-stack;
+    color: colors.$primary-color;
     margin: 0 auto;
     //max-width: 1600px;
 }
@@ -23,7 +22,7 @@ header {
     width: 100%;
     top: 0;
     position: sticky;
-    background-color: $header-bg-color;
+    background-color: colors.$header-bg-color;
     padding: 20px 5%;
     display: flex;
     z-index: 1;
@@ -45,20 +44,20 @@ main {
 footer {
     text-align: center;
     padding: 5rem 0;
-    background-color: $header-bg-color;
+    background-color: colors.$header-bg-color;
 }
 a {
-    color: $link-color;
+    color: colors.$link-color;
     text-decoration: none;
     font-weight: 600;
 }
 a:hover {
-    color: $link-hover-color;
+    color: colors.$link-hover-color;
     rotate: 1deg;
     //display: inline-flex;
 }
 h2, h3, h4, h5, h6 {
-    color: $secondary-color;
+    color: colors.$secondary-color;
     font-weight: 600;
 }
 h1 {
@@ -66,7 +65,7 @@ h1 {
     font-size: 4rem;
     font-weight: 600;
     font-family: Inter;
-    color: $h1-color;
+    color: colors.$h1-color;
     padding-top: 5rem;
     transition: 3s ease-in-out;
 }
@@ -85,19 +84,19 @@ h1:hover {
 .under-h1 {
     margin: -1rem auto 0;
     text-align: center;
-    color: $primary-color;
+    color: colors.$primary-color;
     font-size: 1.3rem;
 }
 .hero-menu-div {
-    background-color: $button-text-color;
-    border: 3px solid $button-color;
+    background-color: colors.$button-text-color;
+    border: 3px solid colors.$button-color;
     display: flex;
     font-weight: 600;
     padding: 1.8rem 2.5rem;
     margin: 2rem 1rem;
 }
 .hero-menu-div:hover {
-    background-color: $link-color;
+    background-color: colors.$link-color;
     display: flex;
     rotate: 0deg;
 }
@@ -111,7 +110,7 @@ h1:hover {
     width: 50px;
     vertical-align: middle;
     margin: 0 1.2rem 0 0;
-    fill: $link-color;
+    fill: colors.$link-color;
 }
 .hero-link-text {
     flex: 1;
@@ -190,10 +189,10 @@ section {
     margin-bottom: 1rem;
 }
 #profile-grid a {
-    color: $profile-card-link;
+    color: colors.$profile-card-link;
 }
 #profile-grid h2, .profile-grid h3 {
-    color: $profile-grid-color;
+    color: colors.$profile-grid-color;
     margin-bottom: 1.5rem;
 }
 #profile-grid div {
@@ -201,7 +200,7 @@ section {
     background-color: #fff;
     padding: 2.25rem;
     list-style: none;
-    color: $profile-grid-color;
+    color: colors.$profile-grid-color;
     box-shadow: 5px 5px 18px -15px;
     line-height: 1.5;
     font-size: 1rem;
@@ -234,23 +233,23 @@ strong {
     font-weight: 600;
 }
 small {
-    color: $primary-color;
+    color: colors.$primary-color;
 }
 button {
     padding: 1.1rem 3rem;
-    background-color: $button-color;
+    background-color: colors.$button-color;
     border: 0;
     border-radius: 0.5rem;
     font-size: 0.8rem;
 }
 button a, a button {
-    color: $button-text-color;
+    color: colors.$button-text-color;
     text-decoration: none;
     font-weight: 600;
 }
 button:hover, button a:hover {
-    background-color: $button-text-hover-bgcolor;
-    color: $button-text-color;
+    background-color: colors.$button-text-hover-bgcolor;
+    color: colors.$button-text-color;
     cursor: pointer;
 }
 .divider {
@@ -258,7 +257,7 @@ button:hover, button a:hover {
 }
 .divider hr {
     max-width: 70px;
-    border: 4px solid $primary-color-dark;
+    border: 4px solid colors.$primary-color-dark;
     border-radius: 13px;
 }
 #projects h3 {
@@ -281,7 +280,7 @@ button:hover, button a:hover {
     border-radius: 0.4rem;
     object-position: top;
     margin: 1rem;
-    box-shadow: $img-box-shadow;
+    box-shadow: colors.$img-box-shadow;
     &:hover {
         opacity: 0.7;
         padding: 0;
@@ -296,7 +295,7 @@ h4 a {
 
 .svg {
     vertical-align: middle;
-    fill: $h1-color;
+    fill: colors.$h1-color;
     text-align: center;
 }
 .svg svg {
@@ -304,7 +303,7 @@ h4 a {
 }
 svg {
     vertical-align: middle;
-    fill: $h1-color;
+    fill: colors.$h1-color;
     margin: 2rem;
 }
 
@@ -369,16 +368,16 @@ svg {
     border-radius: .4rem;
     font-size: 85%;
     white-space: nowrap;
-    color: $link-color;
-    box-shadow: $img-box-shadow;
+    color: colors.$link-color;
+    box-shadow: colors.$img-box-shadow;
     font-weight: 600;
 }
 .tags li a {
-    color: $link-color;
+    color: colors.$link-color;
 }
 .tags li:hover {
     rotate: 3deg;
-    background-color: $taghover;
+    background-color: colors.$taghover;
 }
 .tags li:hover a {
     rotate: 3deg;
@@ -461,11 +460,11 @@ svg {
   }
   
   input:checked + .slider {
-    background-color: $link-color;
+    background-color: colors.$link-color;
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px $link-color;
+    box-shadow: 0 0 1px colors.$link-color;
   }
   
   input:checked + .slider:before {
@@ -494,8 +493,8 @@ svg {
     .tooltip .tooltiptext {
         visibility: hidden;
         width: 200px;
-        background-color: $bg-color-dark;
-        color: $button-text-color;
+        background-color: colors.$bg-color-dark;
+        color: colors.$button-text-color;
         text-align: center;
         border-radius: 1rem;
         padding: 1rem;
@@ -522,7 +521,7 @@ svg {
             margin-left: -5px;
             border-width: 5px;
             border-style: solid;
-            border-color: $bg-color-dark transparent transparent transparent;
+            border-color: colors.$bg-color-dark transparent transparent transparent;
         }
     }
     .tooltip img {
@@ -535,5 +534,3 @@ svg {
     .text-left {
         text-align: left !important;
     }
-  
-  @import "mobile";

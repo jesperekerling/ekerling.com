@@ -20,7 +20,6 @@ $profile-grid-color: #333;
 $img-box-shadow: 2px 2px 2px #eee;
 $taghover: #e0f6ff;
 
-
 // Dark theme colors
 $bg-color-dark: #28292b;
 $header-bg-color-dark: #191a1dad;
@@ -33,105 +32,104 @@ $tag-bg-color-dark: #31344a;
 $headline-color-dark: #fff;
 $profile-card-link-dark: #44486b;
 $img-box-shadow-dark: 1px 1px 3px #00000054;
-// $bg-gradient-dark: linear-gradient(0deg, rgb(64, 64, 65) 0%, rgb(20, 20, 20) 100%);
-
-
 
 html[class='dark_theme'] {
-    background: $bg-color-dark;    
+  background: $bg-color-dark;
+  color: $primary-color-dark;
+  header {
+    background-color: $header-bg-color-dark;
+  }
+  h1 {
+    color: $h1-color-dark;
+  }
+  h2, h3, h4, h5, h6 {
+    color: $headline-color-dark;
+  }
+  a {
+    color: $link-color-dark;
+  }
+  a:hover {
+    color: $link-hover-color-dark;
+  }
+  .hero-menu-div {
+    background-color: $header-bg-color-dark;
+    border: 3px solid transparent;
+    display: flex;
+    font-weight: 600;
+    padding: 1.8rem 2.5rem;
+    margin: 2rem 1rem;
+    border-radius: .5rem;
+  }
+  .hero-link-text span {
     color: $primary-color-dark;
-    header { background-color: $header-bg-color-dark; }
-    h1 {
-      color: $h1-color-dark;
-    }
-    h2, h3, h4, h5, h6  {
-        color: $headline-color-dark;
-    }
-    a {
-      color: $link-color-dark;
-    }
-    a:hover {
-      color: $link-hover-color-dark;
-    }
-    .hero-menu-div {
+  }
+  .hero-icon svg {
+    width: 50px;
+    vertical-align: middle;
+    margin: 0 1.2rem 0 0;
+    fill: $primary-color-dark;
+  }
+  .project-gallery img {
+    box-shadow: $img-box-shadow-dark;
+  }
+  #profile-grid {
+    background-color: $header-bg-color-dark;
+    border-bottom: 10px solid #60606021;
+  }
+  #profile-grid a {
+    color: $profile-card-link-dark;
+  }
+  #profile-grid h2, #profile-grid h3 {
+    color: $profile-grid-color;
+  }
+  #work-tools li a, #work-tools li {
+    color: $link-color-dark;
+    background-color: #3e3e45;
+    box-shadow: none;
+  }
+  .work-div {
+    background-color: rgba(34, 34, 34, 0.9294117647);
+    border: 1px solid rgb(74 74 74 / 54%);
+  }
+  .work-div h3 {
+    color: $bg-color;
+  }
+  .tags li {
+    background-color: #30313b;
+    box-shadow: $img-box-shadow-dark;
+  }
+  .tags li a, .tags li {
+    color: $link-color-dark;
+  }
+  .tags li:hover, .tags li:hover a {
+    rotate: 3deg;
+    background-color: $taghover;
+    color: #000;
+  }
+  .under-h1 {
+    color: $primary-color-dark;
+  }
+  .tooltip .tooltiptext {
+    background-color: $header-bg-color-dark;
+    color: $button-text-color;
+  }
+  footer {
+    background-color: $header-bg-color-dark;
+    color: $primary-color-dark;
+  }
+  .github svg, .linkedin svg {
+    fill: #000000;
+  }
+  @media only screen and (max-width: 600px) {
+    .sticky {
       background-color: $header-bg-color-dark;
-      border: 3px solid transparent;
-      display: flex;
-      font-weight: 600;
-      padding: 1.8rem 2.5rem;
-      margin: 2rem 1rem;
-      border-radius: .5rem;
+      border-top: 2px solid $header-border-color-dark;
     }
-    .hero-link-text span {
-      color: $primary-color-dark;
-    }
-    .hero-icon svg {
-      width: 50px;
-      vertical-align: middle;
-      margin: 0 1.2rem 0 0;
-      fill: $primary-color-dark;
-    }
-    .project-gallery img {
-      box-shadow: $img-box-shadow-dark;
-    }
-    #profile-grid {
-      background-color: $header-bg-color-dark;
-      border-bottom: 10px solid #60606021;
-    }
-    #profile-grid a {
-      color: $profile-card-link-dark;
-    }
-    #profile-grid h2, #profile-grid h3 {
-      color: $profile-grid-color;
-    }
-    #work-tools li a, #work-tools li {
-      color: $link-color-dark;
-      background-color: #3e3e45;
-      box-shadow: none;
-    }
-    .work-div {
-      background-color: rgba(34, 34, 34, 0.9294117647);
-      border: 1px solid rgb(74 74 74 / 54%);
-    }
-    .work-div h3 {
-      color: $bg-color;
-    }
-    .tags li {
-      background-color: #30313b;
-      box-shadow: $img-box-shadow-dark;
-    }
-    .tags li a, .tags li {
-      color: $link-color-dark;
-    }
-    .tags li:hover, .tags li:hover a {
-      rotate: 3deg;
-      background-color: $taghover;
-      color: #000;
-    }
-    .under-h1 {
-      color: $primary-color-dark;
-    }
-    .tooltip .tooltiptext {
-      background-color: $header-bg-color-dark;
-      color: $button-text-color;
-    }
-    footer {
-      background-color: $header-bg-color-dark;
-      color: $primary-color-dark;
-    }
-    .github svg, .linkedin svg {
-      fill: #000000;
-    }
-    @media only screen and (max-width: 600px) {
-      .sticky {
-        background-color: $header-bg-color-dark;
-        border-top: 2px solid $header-border-color-dark;
-      }
-    }
-    svg {
-      fill: $h1-color-dark;
-    }
-    button {
-      background-color: $profile-card-link-dark;
-    }
+  }
+  svg {
+    fill: $h1-color-dark;
+  }
+  button {
+    background-color: $profile-card-link-dark;
+  }
 }

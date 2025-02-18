@@ -1,3 +1,5 @@
+@use "colors";
+
 @media only screen and (max-width: 600px) {
   body {
     font-size: 1rem;
@@ -72,10 +74,10 @@
     padding: 1rem 0 1rem 0;
     text-align: center;
     top: 3.9rem;
-    background-color: $header-bg-color;
+    background-color: colors.$header-bg-color;
     font-weight: 600;
     font-family: Inter;
-    border-top: 1px solid $header-border-color;
+    border-top: 1px solid colors.$header-border-color;
     margin-bottom: 3rem;
     font-size: 1.2rem;
   }
