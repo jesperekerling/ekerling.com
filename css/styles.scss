@@ -1,6 +1,5 @@
 @use "colors";
 @use "fonts";
-@use "mobile" as mobileStyles;
 
 * {
     box-sizing: border-box;
@@ -534,3 +533,5 @@ svg {
     .text-left {
         text-align: left !important;
     }
+
+@import "mobile";
