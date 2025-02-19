@@ -1,6 +1,6 @@
 @use "colors";
 @use "fonts";
-@use "mobile";
+@use "mobile" as mobileStyles;
 
 * {
     box-sizing: border-box;
@@ -35,7 +35,7 @@ header .logo {
 }
 header .theme-switcher {
     margin-left: auto;
-    order: 2
+    order: 2;
 }
 main {
     padding: 0;
@@ -73,14 +73,14 @@ h1:hover {
     animation: rotation 3s infinite ease-in-out;
     rotate: 6deg;
 } 
-  @keyframes rotation {
+@keyframes rotation {
     50% {
       transform: rotate(6deg);
     }
     100% {
       transform: rotate(0deg);
     }
-  }
+}
 .under-h1 {
     margin: -1rem auto 0;
     text-align: center;
