@@ -65,12 +65,7 @@ h1 {
     font-weight: 600;
     font-family: Inter;
     color: colors.$h1-color;
-    //transition: 0.3s ease-in-out;
 }
-h1:hover {
-    //animation: rotation 3s infinite ease-in-out;
-    //rotate: 6deg;
-} 
 @keyframes rotation {
     50% {
       transform: rotate(6deg);

@@ -313,7 +313,6 @@ section {
 }
 
 #hero-section {
-  max-width: 700px;
   margin: 5rem auto 5rem;
   font-size: 1.1rem;
 }
@@ -849,6 +848,9 @@ html[class=dark_theme] button {
   }
   header .logo {
     padding-top: 0;
+  }
+  #hero-section {
+    max-width: 300px;
   }
   .hero-menu-div {
     margin: 8%;
