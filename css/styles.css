@@ -200,11 +200,6 @@ h1 {
   padding-top: 5rem;
 }
 
-h1:hover {
-  animation: rotation 3s infinite ease-in-out;
-  rotate: 6deg;
-}
-
 @keyframes rotation {
   50% {
     transform: rotate(6deg);
